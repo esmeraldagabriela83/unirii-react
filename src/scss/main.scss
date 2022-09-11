@@ -13,3 +13,106 @@ html {
 body{
   background-color: lavender;
 }
+
+.container {
+   border: 3px solid black;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 1em;
+    margin:1.5em;
+  }
+
+#ul22{
+  border:3px solid cornflowerblue;
+  padding:1em;
+  margin:1em;
+  li{
+    border:3px solid coral;
+    padding:0.5em;
+    margin:0.5em;
+    &.text22{
+      background-color: darkgreen;
+      color:Gainsboro ;
+    }
+    &:nth-of-type(2){
+      background-color: IndianRed ;
+    }
+    &:nth-of-type(3){
+      background-color: LightSlateGray ;
+      color:LemonChiffon;
+    }
+  }
+
+}
+
+#paragraphTest2{
+  padding:1.5em;
+  margin:1.5em;
+  border:3px dotted coral;
+  background-color: yellow;
+  &:hover{
+    transition:ease 3s;
+    border:5px dotted yellowgreen;
+      background-color: coral;
+      font-weight: bold;
+  }
+}
+
+#testParagraph2{
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  color:red;
+  background-color: yellow;
+  text-align: center;
+  &:hover{
+    color:green;
+    background-color: pink;
+  }
+  &:active{
+    color:blue;
+    background-color: skyblue;
+  }
+}
+
+#ulLinks{
+  border:3px solid cornflowerblue;
+  padding:1em;
+  margin:1em;
+  li{
+    border:3px solid orange;
+    padding:1em;
+    margin:1em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
