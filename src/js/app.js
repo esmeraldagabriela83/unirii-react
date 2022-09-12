@@ -6,11 +6,43 @@ import FuncTest2 from "./FuncTest2.js";
 
 import FuncLinks from "./FuncLinks.js";
 
+import MyPropExerciseFunc from "./MyPropExerciseFunc.js";
+import ShowTextFunction from "./ShowTextFunction.js";
+import ShowTextFunctionDestructuring from "./ShowTextFunctionDestructuring.js";
+import FuncDestructComponent from "./FuncDestructComponent.js";
+import CountThings from "./CountThings.js";
+import ToDoList from "./ToDoList.js";
+
+import ClassComponent from "./ClassComponent.js";
+import SimpleClassComponent from "./SimpleClassComponent.js";
+import AnotherColorClass from "./AnotherColorClass.js";
+import ExampleComponent from "./ExampleComponent.js";
+
+import HelloF from "./Hello.js";
+import HelloC from "./HelloC.js";
+
+import InteractiveDiv from "./InteractiveDiv.js";
+import FormComponentaControlata from "./FormComponentaControlata.js";
+import ButtonCounter from "./ButtonCounter.js";
+import UseStateFuncComponent from "./UseStateFuncComponent.js";
+import UseEffectMainFunction from "./UseEffectMainFunction";
+
+import ShopItem from "./ShopItem.js";
+import AppFunction from "./AppFunction.js";
+
+import itemsComputers from "./itemsComputers.js"
+console.log("itemsComputers is : " , itemsComputers);
+console.log("itemsComputers[1] is : " , itemsComputers[1]);
+//
 console.log("hello from app.js");
 
 console.log("5*3 is : " , 5*3);
 
 //------------------------------------------------------------------------------
+
+const myimgIndexHtml=document.getElementById('imgIndexHtml');
+myimgIndexHtml.style.padding="1.5em";
+myimgIndexHtml.style.backgroundColor="pink";
 
 const myinputHtml=document.getElementById('inputHtml');
 myinputHtml.style.border="5px solid red";
@@ -44,12 +76,24 @@ function showUserTextFunc(event){
 
   myParagraphHtml.style.border="3px solid orange";
   myParagraphHtml.innerText=myinputHtml.value;
+
+  myimgIndexHtml.style.backgroundColor="yellowgreen";
 }
 
+//
+
+
+
 //------------------------------------------------------------------------------
+const item = {
+  title: "MacBook Pro",
+  // image: "https://bit.ly/2EEtduD",
+  image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+  description: "Power and mobility - the MacBook Pro clearly raises the bar here. Now you can implement your ideas even faster. You'll be helped by powerful processors and memory chips, advanced graphics, instant mass storage and other great solutions.",
+  price: 9999
+}
 
-
-
+//
 
 
 
@@ -63,6 +107,23 @@ function App(){
 <h1>my title 1 from app.js</h1>
 <h2>my title 2 from app.js</h2>
 <MyApp1/>
+<MyPropExerciseFunc  myProp1="string ex 1" myProp2="string ex 2" myProp3="String EX 3"/>
+
+<ShowTextFunction differentColor="cornflowerblue" differentText="ex1 homework string" names="Ana , Maria , Alin merg la mare." />
+<ShowTextFunctionDestructuring  differentColor1="yellow" differentText1="ex1 homework string destructuring" names1="Ana , Maria , Alin merg la munte."/>
+<FuncDestructComponent propColor="yellow" propBackground="deepskyblue" propText="second simplePropText"/>
+
+<ClassComponent  colorClass="SlateBlue" backgroundColorClass="Wheat" textClass="Maria are pere ."/>
+<SimpleClassComponent propColor="red" propBackground="deepskyblue" propText="simplePropText"/>
+<ExampleComponent/>
+
+<CountThings/>
+<ToDoList/>
+
+<section style={{border:"3px solid gold" , padding:"1em" , margin:"1em"}}>
+<HelloF name={"Popescu"} surname={"Alex"}/>
+<HelloC name={"Ionescu"} surname={" Ioana"}/>
+</section>
     </>
   )
 }
@@ -79,4 +140,27 @@ document.getElementById("test2"));
 ReactDOM.render(<FuncLinks/>,
 document.getElementById("linksMain"));
 
+ReactDOM.render(<AnotherColorClass/>,
+document.getElementById("anotherColor"));
+
+ReactDOM.render(<InteractiveDiv/>,
+document.getElementById("interActiveMain"));
+
+ReactDOM.render(<FormComponentaControlata/>,
+document.getElementById("formComponentaControlata"));
+
+ReactDOM.render(<ButtonCounter/>,
+document.getElementById("buttonCounter"));
+
+ReactDOM.render(<UseStateFuncComponent string="Elena Discord Grupa 1 pe 13 05 2022"/>,
+document.getElementById("useStateMain"));
+
+ReactDOM.render(<UseEffectMainFunction/>,
+document.getElementById("useEffectMain"));
+
+ReactDOM.render(<ShopItem shopItem={item}/>,
+document.getElementById("obj"));
+
+ReactDOM.render(<AppFunction itemsArr={itemsComputers}/>,
+document.getElementById("manyobj"));
 //

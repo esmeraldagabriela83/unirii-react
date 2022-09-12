@@ -2,14 +2,18 @@ console.log("salut from page-img.js");
 
 const mydivImg=document.getElementById('divImg');
 mydivImg.style.width="80%";
-mydivImg.style.height="300px";
-mydivImg.style.border="3px dashed indigo";
+mydivImg.style.height="500px";
+mydivImg.style.border="5px dashed yellowgreen";
 mydivImg.style.backgroundRepeat="no-repeat";
-mydivImg.style.backgroundImage="url(../../assets/images/photo5.jpg)";
+mydivImg.style.backgroundImage="url(../../assets/images/myPhoto2.JPG)";
 mydivImg.style.backgroundPosition="center";
-mydivImg.style.backgroundSize="center";
+mydivImg.style.backgroundSize="contain";
 
-//not-working get the image from scss and js
+//
+
+
+
+
 
 
 
@@ -32,14 +36,6 @@ mydivImg.style.backgroundSize="center";
 //   background-position: center;
 //
 //   background-size: cover;
-
-
-
-
-
-
-
-
 
 
 //
