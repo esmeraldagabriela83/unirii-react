@@ -26,9 +26,12 @@ import FormComponentaControlata from "./FormComponentaControlata.js";
 import ButtonCounter from "./ButtonCounter.js";
 import UseStateFuncComponent from "./UseStateFuncComponent.js";
 import UseEffectMainFunction from "./UseEffectMainFunction";
+import UseStateSchool from "./UseStateSchool.js";
+import UseStateSchoolCar from "./UseStateSchoolCar.js";
 
 import ShopItem from "./ShopItem.js";
 import AppFunction from "./AppFunction.js";
+import UseStateSchoolCarSecond from "./UseStateSchoolCarSecond.js";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -124,6 +127,11 @@ function App(){
 <HelloF name={"Popescu"} surname={"Alex"}/>
 <HelloC name={"Ionescu"} surname={" Ioana"}/>
 </section>
+
+<UseStateSchool propColor={"cornflowerblue"} propText={"school text function"}/>
+<UseStateSchoolCar propWidth={"700px"} propColor={"indigo"} propText={"school 2 useState"}/>
+<UseStateSchoolCarSecond propWidth={"900px"} propColor={"magenta"} propText={"school 3 useState"}/>
+
     </>
   )
 }
