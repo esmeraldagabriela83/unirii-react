@@ -32,6 +32,7 @@ import UseStateSchoolCar from "./UseStateSchoolCar.js";
 import ShopItem from "./ShopItem.js";
 import AppFunction from "./AppFunction.js";
 import UseStateSchoolCarSecond from "./UseStateSchoolCarSecond.js";
+import UseStateCat from "./UseStateCat.js";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -131,7 +132,7 @@ function App(){
 <UseStateSchool propColor={"cornflowerblue"} propText={"school text function"}/>
 <UseStateSchoolCar propWidth={"700px"} propColor={"indigo"} propText={"school 2 useState"}/>
 <UseStateSchoolCarSecond propWidth={"900px"} propColor={"magenta"} propText={"school 3 useState"}/>
-
+<UseStateCat propWidth={"500px"} propColor={"yellow"} propText={"UseStateCat"}/>
     </>
   )
 }
@@ -172,3 +173,4 @@ document.getElementById("obj"));
 ReactDOM.render(<AppFunction itemsArr={itemsComputers}/>,
 document.getElementById("manyobj"));
 //
+//https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3
