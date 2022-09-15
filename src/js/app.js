@@ -33,6 +33,7 @@ import ShopItem from "./ShopItem.js";
 import AppFunction from "./AppFunction.js";
 import UseStateSchoolCarSecond from "./UseStateSchoolCarSecond.js";
 import UseStateCat from "./UseStateCat.js";
+import UseEffectSchool from "./UseEffectSchool.js";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -133,6 +134,8 @@ function App(){
 <UseStateSchoolCar propWidth={"700px"} propColor={"indigo"} propText={"school 2 useState"}/>
 <UseStateSchoolCarSecond propWidth={"900px"} propColor={"magenta"} propText={"school 3 useState"}/>
 <UseStateCat propWidth={"500px"} propColor={"yellow"} propText={"UseStateCat"}/>
+<UseEffectSchool propWidth={"400px"} propColor={"orange"} propText={"UseEffectSchoolText"}/>
+
     </>
   )
 }
