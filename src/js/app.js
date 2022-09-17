@@ -34,6 +34,9 @@ import AppFunction from "./AppFunction.js";
 import UseStateSchoolCarSecond from "./UseStateSchoolCarSecond.js";
 import UseStateCat from "./UseStateCat.js";
 import UseEffectSchool from "./UseEffectSchool.js";
+import UseEffectAfterCata from "./UseEffectAfterCata.js";
+import UseEffectAfterCataInnovation from "./UseEffectAfterCataInnovation.js";
+import UseEffectUserInput from "./UseEffectUserInput.js";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -135,7 +138,9 @@ function App(){
 <UseStateSchoolCarSecond propWidth={"900px"} propColor={"magenta"} propText={"school 3 useState"}/>
 <UseStateCat propWidth={"500px"} propColor={"yellow"} propText={"UseStateCat"}/>
 <UseEffectSchool propWidth={"400px"} propColor={"orange"} propText={"UseEffectSchoolText"}/>
-
+<UseEffectAfterCata propWidth={"300px"} propColor={"yellowgreen"} propText={"UseEffectAfterCata"}/>
+<UseEffectAfterCataInnovation propWidth={"200px"} propColor={"green"} propText={"UseEffectAfterCataInnovation"}/>
+<UseEffectUserInput propWidth={"300px"} propColor={"forestgreen"} propText={"UseEffectUserInput"}/>
     </>
   )
 }

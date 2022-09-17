@@ -110,8 +110,25 @@ body{
 flex-wrap: wrap;
 }
 
-
-
+#userTitle{
+  background-color: yellow;
+  padding:1em;
+  &:hover{
+    transition:ease 3s;
+    background-color: gold;
+    color:magenta;
+  }
+}
+#userTitle2{
+  margin:1em;
+  border:3px solid red;
+  &:active{
+    padding:1em;
+    background-color: skyblue;
+    color:darkmagenta;
+    border:3px solid blue;
+  }
+}
 
 
 
