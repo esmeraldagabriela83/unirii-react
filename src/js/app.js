@@ -37,6 +37,7 @@ import UseEffectSchool from "./UseEffectSchool.js";
 import UseEffectAfterCata from "./UseEffectAfterCata.js";
 import UseEffectAfterCataInnovation from "./UseEffectAfterCataInnovation.js";
 import UseEffectUserInput from "./UseEffectUserInput.js";
+import UseEffectObjectChange from "./UseEffectObjectChange.js";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -141,6 +142,7 @@ function App(){
 <UseEffectAfterCata propWidth={"300px"} propColor={"yellowgreen"} propText={"UseEffectAfterCata"}/>
 <UseEffectAfterCataInnovation propWidth={"200px"} propColor={"green"} propText={"UseEffectAfterCataInnovation"}/>
 <UseEffectUserInput propWidth={"300px"} propColor={"forestgreen"} propText={"UseEffectUserInput"}/>
+<UseEffectObjectChange propWidth={"400px"} propColor={"magenta"} propText={"UseEffectObjectChange"}/>
     </>
   )
 }
