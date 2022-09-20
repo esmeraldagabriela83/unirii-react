@@ -41,6 +41,10 @@ import UseEffectObjectChange from "./UseEffectObjectChange.js";
 import HiClass from "./HiClass.js";
 import HiFunction from "./HiFunction.js";
 
+import HiClassDestructurare from "./HiClassDestructurare.js";
+import HiFunctionDestructurare from "./HiFunctionDestructurare";
+import CosticaPerson from "./CosticaPerson.js";
+
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
 console.log("itemsComputers[1] is : " , itemsComputers[1]);
@@ -101,10 +105,19 @@ const item = {
   // image: "https://bit.ly/2EEtduD",
   image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
   description: "Power and mobility - the MacBook Pro clearly raises the bar here. Now you can implement your ideas even faster. You'll be helped by powerful processors and memory chips, advanced graphics, instant mass storage and other great solutions.",
-  price: 9999
+  price: 9123
 }
 
 //
+
+
+
+
+
+
+
+
+
 
 
 
@@ -147,6 +160,25 @@ function App(){
 <UseEffectObjectChange propWidth={"400px"} propColor={"magenta"} propText={"UseEffectObjectChange"}/>
 <HiClass propName={"AlexanderC"} propSurname={"PopescuC"} propWidth={"400px"} propColor={"magenta"} propText={"HiClass"}/>
 <HiFunction propName={"AlexanderF"} propSurname={"PopescuF"} propWidth={"400px"} propColor={"magenta"} propText={"HiFunction"}/>
+
+<section style={{border:"3px solid gold" , padding:"1em" , margin:"1em"}}>
+<HiClassDestructurare propName={"MariaC"} propSurname={"Popescu"} propAge={18} propColor={"darkgreen"}/>
+<HiClassDestructurare propName={"AnaC"} propSurname={"Lavrici"} propAge={34} propColor={"green"}/>
+<HiClassDestructurare propName={"EugeniaC"} propSurname={"Ionescu"} propAge={63} propColor={"darkmagenta"}/>
+</section>
+
+<section style={{border:"3px solid olive" , padding:"1em" , margin:"1em"}}>
+<HiFunctionDestructurare propName={"RoxanaF"} propSurname={"Agafitei"} propAge={25} propColor={"magenta"} />
+<HiFunctionDestructurare propName={"TeodoraF"} propSurname={"Manolescu"} propAge={75} propColor={"yellowgreen"} />
+<HiFunctionDestructurare propName={"IleanaF"} propSurname={"Amarandei"} propAge={95} propColor={"darkmagenta"} />
+</section>
+
+<section style={{border:"3px solid BurlyWood" , padding:"1em" , margin:"1em"}}>
+costica react only one person
+<CosticaPerson propWidth={"700px"} propColor={"indigo"} propText={"CosticaPerson"} />
+
+</section>
+
     </>
   )
 }
