@@ -45,6 +45,7 @@ import HiClassDestructurare from "./HiClassDestructurare.js";
 import HiFunctionDestructurare from "./HiFunctionDestructurare";
 import CosticaPerson from "./CosticaPerson.js";
 import UserInfoAndrei from "./UserInfoAndrei";
+import UserInfoPersons from "./UserInfoPersons.js";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -180,7 +181,7 @@ costica react only one person
 </section>
 
 <UserInfoAndrei  propWidth={"500px"} propColor={"yellowgreen"} propText={"UserInfoAndrei"}  />
-
+<UserInfoPersons   propWidth={"750px"} propColor={"orange"} propText={"UserInfoPersons"} />
     </>
   )
 }
