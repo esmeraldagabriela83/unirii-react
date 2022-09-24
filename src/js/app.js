@@ -46,6 +46,9 @@ import HiFunctionDestructurare from "./HiFunctionDestructurare";
 import CosticaPerson from "./CosticaPerson.js";
 import UserInfoAndrei from "./UserInfoAndrei";
 import UserInfoPersons from "./UserInfoPersons.js";
+import ColorfulBoxes from "./ColorfulBoxes.js";
+import ColorfulBoxesUseEffect from "./ColorfulBoxesUseEffect.js";
+import FootballSchool from "./FootballSchool.js";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -182,6 +185,16 @@ costica react only one person
 
 <UserInfoAndrei  propWidth={"500px"} propColor={"yellowgreen"} propText={"UserInfoAndrei"}  />
 <UserInfoPersons   propWidth={"750px"} propColor={"orange"} propText={"UserInfoPersons"} />
+<section style={{display:"flex",
+                    alignItems:"center",
+                    justifyContent:"center",
+                    flexDirection:"column" , border:"3px dashed red"}}>
+<ColorfulBoxes propWidth={"250px"} propColor={"cornflowerblue"} propText={"ColorfulBoxes"}/>
+<ColorfulBoxesUseEffect propWidth={"250px"} propColor={"cornflowerblue"} propText={"ColorfulBoxes"}/>
+                    </section>
+
+
+<FootballSchool propWidth={"250px"} propColor={"tomato"} propText={"FootballSchool"}/>
     </>
   )
 }

@@ -1,5 +1,6 @@
 import React , {useState , useEffect} from "react" ;
-import mypersons from "./persons";
+import mypersons from "./persons.js";
+import clickPersons from "./clickPersons.js";
 
 console.log("--- !!! mypersons is : " , mypersons);
 //--- !!! mypersons is :  (5) [{…}, {…}, {…}, {…}, {…}]
@@ -20,6 +21,14 @@ function UserInfoPersons(props){
   console.log("--- !!! discordPersons is : " , discordPersons);
   //--- !!! discordPersons is :  (5) [{…}, {…}, {…}, {…}, {…}]
 
+  const [eachColor , setEachColor]=useState("red");
+
+  const handleChangePeople=(event) =>{
+    setDiscordPersons(clickPersons);
+    setEachColor(propColor);
+  }
+
+
 return(
   <>
 <h1 style={{width:propWidth , color:propColor , border:`3px dotted ${propColor}`}}>propText is : {propText}</h1>
@@ -27,12 +36,12 @@ return(
 
 {discordPersons.map((person , index) =>{
   return(
-    <article>
+    <article key={index}>
 <div style={{width:propWidth ,
              height:"300px" ,
              padding:"1em" ,
              margin:"1em" ,
-             border:`3px solid ${propColor}` ,
+             border:`5px solid ${eachColor}` ,
              backgroundImage:person.urlImage,
              backgroundRepeat:"no-repeat" ,
              backgroundPosition:"center" ,
@@ -45,7 +54,7 @@ return(
     </article>
   )
 })}
-
+   <button onClick={handleChangePeople}>click to change</button>
 </>
 );
 }
