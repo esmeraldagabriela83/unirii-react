@@ -49,6 +49,9 @@ import UserInfoPersons from "./UserInfoPersons.js";
 import ColorfulBoxes from "./ColorfulBoxes.js";
 import ColorfulBoxesUseEffect from "./ColorfulBoxesUseEffect.js";
 import FootballSchool from "./FootballSchool.js";
+import FootballSchoolSecond from "./FootballSchoolSecond.js";
+import IfText from "./IfText.js";
+import IfStateText from "./IfStateText.js";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -195,6 +198,9 @@ costica react only one person
 
 
 <FootballSchool propWidth={"250px"} propColor={"tomato"} propText={"FootballSchool"}/>
+<FootballSchoolSecond propWidth={"550px"} propColor={"cornflowerblue"} propText={"FootballSchoolSecond"} />
+<IfText propWidth={"550px"} propColor={"magenta"} propText={"IfText"} />
+<IfStateText  propWidth={"650px"} propColor={"olive"} propText={"IfStateText"}/>
     </>
   )
 }
