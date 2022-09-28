@@ -202,7 +202,7 @@ costica react only one person
 <FootballSchoolSecond propWidth={"550px"} propColor={"cornflowerblue"} propText={"FootballSchoolSecond"} />
 <IfText propWidth={"550px"} propColor={"magenta"} propText={"IfText"} />
 <IfStateText  propWidth={"650px"} propColor={"olive"} propText={"IfStateText"} propState={"false"}/>
-<IfIfMySchool  propWidth={"450px"} propColor={"yellow"} propText={"IfIfMySchool"} propState={"true"}/>
+<IfIfMySchool  propWidth={"450px"} propColor={"yellow"} propText={"IfIfMySchool"} propState={"true"} propStateFalse={"false"}/>
     </>
   )
 }
