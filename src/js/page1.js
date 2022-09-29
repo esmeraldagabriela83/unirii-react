@@ -94,20 +94,42 @@ console.log(whoAreYou(person));
 // I am 591 years old.
 // My proffesion is Lord of Wallachia.
 
+//------------------------------------------------------------------------------
+
+const myCarsPage1UL=document.getElementById('myCarsPage1UL');
+console.log("///--- myCarsPage1UL is " , myCarsPage1UL);
+
+myCarsPage1UL.style.border="3px dotted pink";
+myCarsPage1UL.style.padding="1em";
+myCarsPage1UL.style.margin="1em";
 
 
+const myCarsPage1=['Ford', 'BMW', 'Audi' , 'rabla' , 'dacia' , 'myCAR'];
+console.log("---/// myCarsPage1 arr is : " , myCarsPage1);
+// ---/// myCarsPage1 arr is :  (6) ['Ford', 'BMW', 'Audi', 'rabla', 'dacia', 'myCAR']
 
+const myCarPageAll=document.getElementsByClassName('myCarPage');
+console.log("myCarPageAll arr  is " , myCarPageAll);
+//myCarPageAll arr  is  HTMLCollection(6) [li.myCarPage, li.myCarPage, li.myCarPage, li.myCarPage, li.myCarPage, li.myCarPage]
 
+for(let i=0 ; i<myCarPageAll.length ; i++){
+  myCarPageAll[i].style.border="3px solid red";
+  myCarPageAll[i].style.padding="1em";
+  myCarPageAll[i].style.margin="1em";
+  myCarPageAll[i].innerText=myCarsPage1[i];
+}
 
-
-
-
-
-
-
-
-
-
+//------------------------------------------------------------------------------
+function getMyCar(arr){
+  for(let i=0 ; i<arr.length ; i++){
+    console.log("arr is : " , arr);
+    console.log("arr[i] is : " , arr[i]);
+    //return `my car is ${arr[i]}`;
+  return arr[i].length + 5;
+  }
+}
+//apel functie si cu console.log() pt afisare
+console.log(" get me the car is : " , getMyCar(myCarsPage1));
 
 
 

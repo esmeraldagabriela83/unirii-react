@@ -53,6 +53,7 @@ import FootballSchoolSecond from "./FootballSchoolSecond.js";
 import IfText from "./IfText.js";
 import IfStateText from "./IfStateText.js";
 import IfIfMySchool from "./IfIfMySchool";
+import SchoolConditionalReact from "./SchoolConditionalReact.js";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -118,7 +119,7 @@ const item = {
 }
 
 //
-
+const schoolCars=['Ford', 'BMW', 'Audi' , 'Dacia' , 'Rabla'];
 
 
 
@@ -203,6 +204,7 @@ costica react only one person
 <IfText propWidth={"550px"} propColor={"magenta"} propText={"IfText"} />
 <IfStateText  propWidth={"650px"} propColor={"olive"} propText={"IfStateText"} propState={"false"}/>
 <IfIfMySchool  propWidth={"450px"} propColor={"yellow"} propText={"IfIfMySchool"} propState={"true"} propStateFalse={"false"}/>
+<SchoolConditionalReact   propWidth={"650px"} propColor={"yellowgreen"} propText={"SchoolConditionalReact"} propStateTrue={"true"} propStateFalse={"false"} carsProp={schoolCars}/>
     </>
   )
 }
