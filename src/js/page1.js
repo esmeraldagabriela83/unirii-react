@@ -82,6 +82,7 @@ const person = {
 
 
 function whoAreYou(personObj) {
+  //destructurare object person
   const {name,lastName,yearOfBirth,proffesion} = personObj;
 
   return `My name is ${name} ${lastName} .
@@ -94,6 +95,63 @@ console.log(whoAreYou(person));
 // I am 591 years old.
 // My proffesion is Lord of Wallachia.
 
+
+const personObjVlad=document.getElementById('personObjVlad');
+personObjVlad.style.border="3px dotted brown";
+personObjVlad.style.padding="1em";
+personObjVlad.style.margin="1em";
+personObjVlad.innerText=whoAreYou(person);
+
+//------------------------------------------------------------------------------
+
+const myPeopleArr=[
+  {
+    name: "Andreea",
+    lastName: "Iordache",
+    yearOfBirth: 1431,
+    proffesion: "catLover"
+  },
+  {
+    name: "Ion",
+    lastName: "Agache",
+    yearOfBirth: 1567,
+    proffesion: "inginer"
+  },
+  {
+    name: "Alina",
+    lastName: "Teodorescu",
+    yearOfBirth: 2000,
+    proffesion: "asistent"
+  }
+];
+
+console.log("--- myPeopleArr is : " , myPeopleArr);
+
+for(let i=0 ; i<myPeopleArr.length ; i++){
+  console.log(whoAreYou(myPeopleArr[i]));
+}
+
+// My name is Andreea Iordache .
+// I am 591 years old.
+// My proffesion is catLover.
+// page1.js:133 My name is Ion Agache .
+// I am 455 years old.
+// My proffesion is inginer.
+// page1.js:133 My name is Alina Teodorescu .
+// I am 22 years old.
+// My proffesion is asistent.
+
+const alleachObjPerson=document.getElementsByClassName('eachObjPerson');
+console.log("---!!!--- alleachObjPerson is : " , alleachObjPerson);
+///---!!!--- alleachObjPerson is :  HTMLCollection(3) [li.eachObjPerson, li.eachObjPerson, li.eachObjPerson]
+
+for(let i=0 ; i<alleachObjPerson.length ; i++){
+  alleachObjPerson[i].style.border="3px dotted cornflowerblue";
+  alleachObjPerson[i].style.padding="1em";
+  alleachObjPerson[i].style.margin="1em";
+  alleachObjPerson[i].innerText=whoAreYou(myPeopleArr[i]);
+}
+
 //------------------------------------------------------------------------------
 
 const myCarsPage1UL=document.getElementById('myCarsPage1UL');
@@ -103,6 +161,11 @@ myCarsPage1UL.style.border="3px dotted pink";
 myCarsPage1UL.style.padding="1em";
 myCarsPage1UL.style.margin="1em";
 
+//------------------------------------------------------------------------------
+
+
+
+//------------------------------------------------------------------------------29 09 2022
 
 const myCarsPage1=['Ford', 'BMW', 'Audi' , 'rabla' , 'dacia' , 'myCAR'];
 console.log("---/// myCarsPage1 arr is : " , myCarsPage1);
@@ -120,16 +183,63 @@ for(let i=0 ; i<myCarPageAll.length ; i++){
 }
 
 //------------------------------------------------------------------------------
-function getMyCar(arr){
-  for(let i=0 ; i<arr.length ; i++){
-    console.log("arr is : " , arr);
-    console.log("arr[i] is : " , arr[i]);
-    //return `my car is ${arr[i]}`;
-  return arr[i].length + 5;
+const myCarsPage2=['Ford', 'BMW', 'Audi' , 'rabla' , 'dacia' , 'myCAR' , 'myCarSecond'];
+
+const myCars2HTML=document.getElementById('myCars2HTML');
+myCars2HTML.style.padding="1em";
+myCars2HTML.style.margin="1em";
+myCars2HTML.style.border="3px dotted limegreen";
+myCars2HTML.innerText=myCarsPage2.join(" / ");
+
+//------------------------------------------------------------------------------
+
+function getMyNr(mynr){
+  for(let i=0 ; i<mynr ; i++){
+    console.log("my nr is each i: " , i);
   }
+  return mynr + 3;
 }
-//apel functie si cu console.log() pt afisare
-console.log(" get me the car is : " , getMyCar(myCarsPage1));
+//apel functie
+getMyNr(5);
+console.log("when mynr is 10 : " , getMyNr(10));
+
+const mynrHTMLparagraph=document.getElementById('mynrHTMLparagraph');
+mynrHTMLparagraph.style.padding="1em";
+mynrHTMLparagraph.style.margin="1em";
+mynrHTMLparagraph.style.border="3px dotted orange";
+mynrHTMLparagraph.innerText=getMyNr(7);
+
+const mynrHTMLparagraphSecond=document.getElementById('mynrHTMLparagraphSecond');
+mynrHTMLparagraphSecond.style.padding="1em";
+mynrHTMLparagraphSecond.style.margin="1em";
+mynrHTMLparagraphSecond.style.border="3px dotted orangered";
+mynrHTMLparagraphSecond.innerText=getMyNr(2) + getMyNr(3);
+
+//------------------------------------------------------------------------------
+// — 19.04.2022 discord general pt a construi functii cu tad-uri
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
