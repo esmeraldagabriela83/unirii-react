@@ -54,6 +54,8 @@ import IfText from "./IfText.js";
 import IfStateText from "./IfStateText.js";
 import IfIfMySchool from "./IfIfMySchool";
 import SchoolConditionalReact from "./SchoolConditionalReact.js";
+import SumReduceCatalin from "./SumReduceCatalin.js";
+import SumAndreiGR1dISCORD from "./SumAndreiGR1dISCORD.js";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -121,7 +123,7 @@ const item = {
 //
 const schoolCars=['Ford', 'BMW', 'Audi' , 'Dacia' , 'Rabla'];
 
-
+const myNRS=[5,7,8,1,3];
 
 
 
@@ -244,5 +246,18 @@ document.getElementById("obj"));
 
 ReactDOM.render(<AppFunction itemsArr={itemsComputers}/>,
 document.getElementById("manyobj"));
+
+function SumApp(){
+  return(
+    <>
+<h1>catalin sum : </h1>
+<SumReduceCatalin propWidth={"650px"} propColor={"yellowgreen"} propText={"SumReduceCatalin"} numbersProp={myNRS}/>
+<h1>andrei sum : </h1>
+<SumAndreiGR1dISCORD propWidth={"650px"} propColor={"darkgreen"} propText={"SumAndreiGR1dISCORD"} firstNr={5} secondNr={55}/>
+    </>
+  );
+}
+
+ReactDOM.render(<SumApp/> , document.getElementById('sumDiscord'));
 //
 //https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3

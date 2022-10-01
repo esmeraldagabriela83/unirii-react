@@ -122,7 +122,7 @@ const handleChangeAllMihaela=(event) =>{
   const userMihaelaNr=document.getElementById('userMihaelaNr').value;
   const usertextMihaela=document.getElementById('usertextMihaela').value;
 
-  const objSingle4Copy={...objSingle4 , myImg:userPhotoMihaela ,color:userColorMihaela , backgroundColor:userbackgroundColorMihaela, myNr:parseFloat(userMihaelaNr) + 3000 ,  };
+  const objSingle4Copy={...objSingle4 , myImg:userPhotoMihaela ,color:userColorMihaela , backgroundColor:userbackgroundColorMihaela, myNr:parseFloat(userMihaelaNr) + 3000 , myText:usertextMihaela };
   setObjSingle4(objSingle4Copy);
 }
 
@@ -198,6 +198,7 @@ const handleChangeAllMihaela=(event) =>{
 </div>
 
 <div style={{border:`3px dotted ${propColor}` , margin:"1em" , padding:"1em"}}>
+<p>objSingle3.myNr is : {objSingle3.myNr}</p>
 <input type="number" name="number" id="userCostelNr" placeholder="write a number and change" />
 <button onClick={handleChangeNrCostel}>add number + 1000</button>
 </div>
@@ -231,9 +232,11 @@ const handleChangeAllMihaela=(event) =>{
             <h3>backgroundColor</h3>
             <input type="text" name="backgroundColor" id="userbackgroundColorMihaela" placeholder="write a backgroundColor" /><br></br>
             <h3>nr + 3000</h3>
+            <p>objSingle4.myNr is : {objSingle4.myNr}</p>
             <input type="number" name="number" id="userMihaelaNr" placeholder="write a number and change" /><br></br>
             <h1 style={{color:propColor}}>objSingle4.myText is : {objSingle4.myText}</h1>
             <h3>change text</h3>
+            <p>objSingle4.myText is : {objSingle4.myText}</p>
             <input type="text" name="text" id="usertextMihaela" placeholder="write a text" /><br></br>
 
             <button onClick={handleChangeAllMihaela}>change all</button><br></br>
