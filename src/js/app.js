@@ -56,6 +56,9 @@ import IfIfMySchool from "./IfIfMySchool";
 import SchoolConditionalReact from "./SchoolConditionalReact.js";
 import SumReduceCatalin from "./SumReduceCatalin.js";
 import SumAndreiGR1dISCORD from "./SumAndreiGR1dISCORD.js";
+// import HoverDiscordFunc from "./HoverDiscord.js";
+// import HoverDiscordClass from "./HoverDiscord.js";
+import {HoverDiscordFunc , HoverDiscordClass} from "./HoverDiscord.js";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -259,5 +262,19 @@ function SumApp(){
 }
 
 ReactDOM.render(<SumApp/> , document.getElementById('sumDiscord'));
+
+function HoverDiscordApp(){
+return(
+  <>
+<h1>my hover function component</h1>
+<HoverDiscordFunc propWidth={"450px"} propColor={"tomato"} propText={"HoverDiscordFunc"}/>
+
+<h1>my hover class component</h1>
+<HoverDiscordClass  propWidth={"450px"} propColor={"olive"} propText={"HoverDiscordClass"}/>
+  </>
+);
+}
+
+ReactDOM.render(<HoverDiscordApp/> , document.getElementById('hoverDiscord'));
 //
 //https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3
