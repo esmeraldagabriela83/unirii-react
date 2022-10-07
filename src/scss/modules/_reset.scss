@@ -1,0 +1,23 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-family: 'Nunito', sans-serif;
+}
+
+body{
+  background-color: lavender;
+}
+
+.container {
+   border: 3px solid black;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding:0 1em;
+  }

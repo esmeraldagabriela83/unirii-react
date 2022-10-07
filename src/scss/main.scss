@@ -1,25 +1,7 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style-type: none;
-}
+@import "./colorsAllPage";
+@import "modules/reset";
 
-html {
-  font-family: 'Nunito', sans-serif;
-}
 
-body{
-  background-color: lavender;
-}
-
-.container {
-   border: 3px solid black;
-    max-width: 1024px;
-    margin: 0 auto;
-    padding:0 1em;
-  }
 
 #ul22{
   border:3px solid cornflowerblue;
@@ -141,9 +123,22 @@ flex-wrap: wrap;
   outline: none;
 }
 
+/*-----------------------------------------------------------------------------*/
+#textField-first{
+  background-color: $myBgColor1;
+  color:$myTextColor1;
+  text-align: center;
+  padding: 1.5em 0;
+  margin:1em;
+  border-bottom:7px solid $myTextColor2;
+  border-left: 7px dotted red;
+  border-right: 7px dashed olive;
 
-
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
 
 
 

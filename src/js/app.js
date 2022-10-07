@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+
+
 import MyApp1 from "./MyApp1.js";
 import FuncTest2 from "./FuncTest2.js";
 
@@ -59,6 +61,7 @@ import SumAndreiGR1dISCORD from "./SumAndreiGR1dISCORD.js";
 // import HoverDiscordFunc from "./HoverDiscord.js";
 // import HoverDiscordClass from "./HoverDiscord.js";
 import {HoverDiscordFunc , HoverDiscordClass} from "./HoverDiscord.js";
+import TextFieldgr1 from "./textFieldgr1";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -127,6 +130,49 @@ const item = {
 const schoolCars=['Ford', 'BMW', 'Audi' , 'Dacia' , 'Rabla'];
 
 const myNRS=[5,7,8,1,3];
+//--------------------------------------------------------------------------------------
+const myBorderTopColor="green";
+
+const textFieldFirst=document.getElementById('textField-first');
+textFieldFirst.style.fontWeight="bold";
+textFieldFirst.style.height="15vh";
+textFieldFirst.style.borderTop=`7px solid ${myBorderTopColor}`;
+textFieldFirst.innerText=schoolCars.join(" / ") + "   " +  item.title + " my field text first .";
+
+//------------------------------------------------------------------------------------------
+const myObjTextField2={
+  myText3:" my field text second .",
+  myFieldBackgroundColor:"deeppink",
+  myFieldColor:"yellow",
+  myFieldImage:"https://images.pexels.com/photos/13552036/pexels-photo-13552036.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+}
+
+
+const textFieldSecond=document.getElementById('textField-second');
+textFieldSecond.style.padding="3em";
+textFieldSecond.style.margin="1em";
+textFieldSecond.style.backgroundRepeat="no-repeat";
+textFieldSecond.style.backgroundPosition="center";
+textFieldSecond.style.backgroundCover="contain";
+textFieldSecond.style.width="70vw";
+textFieldSecond.style.height="50vh";
+
+textFieldSecond.style.backgroundImage=`url(${myObjTextField2.myFieldImage})`;
+
+textFieldSecond.style.border=`7px solid ${myObjTextField2.myFieldColor}`;
+textFieldSecond.style.backgroundColor=myObjTextField2.myFieldBackgroundColor;
+
+textFieldSecond.innerText=myObjTextField2.myText3;
+
+textFieldSecond.style.color=myObjTextField2.myFieldColor;
+textFieldSecond.style.fontWeight="bold";
+//----------------------------------------------------------------------------------
+
+
+
+
+
+
 
 
 
@@ -263,6 +309,8 @@ function SumApp(){
 
 ReactDOM.render(<SumApp/> , document.getElementById('sumDiscord'));
 
+//------------------------------------------------------------------------------
+
 function HoverDiscordApp(){
 return(
   <>
@@ -276,5 +324,17 @@ return(
 }
 
 ReactDOM.render(<HoverDiscordApp/> , document.getElementById('hoverDiscord'));
+
+//------------------------------------------------------------------------------
+
+function TextFieldDiscordApp(){
+  return(
+    <>
+<TextFieldgr1  propWidth={"550px"} propColor={"tomato"} propText={"TextFieldgr1"}/>
+    </>
+  );
+}
+
+ReactDOM.render(<TextFieldDiscordApp/> , document.getElementById('textField-third'));
 //
 //https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3
