@@ -61,7 +61,7 @@ import SumAndreiGR1dISCORD from "./SumAndreiGR1dISCORD.js";
 // import HoverDiscordFunc from "./HoverDiscord.js";
 // import HoverDiscordClass from "./HoverDiscord.js";
 import {HoverDiscordFunc , HoverDiscordClass} from "./HoverDiscord.js";
-import TextFieldgr1 from "./textFieldgr1";
+import {TextFieldgr1 , TextAndImageFieldgr1 , TextFieldFirst} from "./textFieldgr1";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -331,6 +331,10 @@ function TextFieldDiscordApp(){
   return(
     <>
 <TextFieldgr1  propWidth={"550px"} propColor={"tomato"} propText={"TextFieldgr1"}/>
+
+<TextAndImageFieldgr1  propWidth={"350px"} propColor={"olive"} propText={"TextAndImageFieldgr1"}/>
+
+<TextFieldFirst  propWidth={"750px"} propColor={"skyblue"} propText={"TextFieldFirst"} />
     </>
   );
 }
