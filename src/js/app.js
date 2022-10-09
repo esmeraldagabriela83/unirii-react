@@ -62,6 +62,10 @@ import SumAndreiGR1dISCORD from "./SumAndreiGR1dISCORD.js";
 // import HoverDiscordClass from "./HoverDiscord.js";
 import {HoverDiscordFunc , HoverDiscordClass} from "./HoverDiscord.js";
 import {TextFieldgr1 , TextAndImageFieldgr1 , TextFieldFirst} from "./textFieldgr1";
+import DiscordInteractiveGr1 from "./DiscordInteractiveGr1.js";
+import ModifyCounterByUser from "./ModifyCounterByUser.js";
+import ModifyByUserByBtn from "./ModifyByUserByBtn";
+import AddInputsValues from "./AddInputsValues";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -340,5 +344,23 @@ function TextFieldDiscordApp(){
 }
 
 ReactDOM.render(<TextFieldDiscordApp/> , document.getElementById('textField-third'));
+
+//------------------------------------------------------------------------------
+
+function DiscordInteractiveApp(){
+  return(
+<>
+<DiscordInteractiveGr1   propWidth={"550px"} propColor={"BlueViolet"} propText={"DiscordInteractiveGr1"} />
+
+<ModifyCounterByUser  propWidth={"350px"} propColor={"aqua"} propText={"ModifyCounterByUser"} />
+
+<ModifyByUserByBtn propWidth={"250px"} propColor={"chocolate"} propText={"ModifyByUserByBtn"} />
+
+<AddInputsValues  propWidth={"850px"} propColor={"LightSeaGreen  "} propText={"AddInputsValues"}/>
+</>
+  );
+}
+
+ReactDOM.render(<DiscordInteractiveApp/> , document.getElementById('discord-interactive'));
 //
 //https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3
