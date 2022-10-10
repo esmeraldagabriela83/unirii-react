@@ -66,6 +66,7 @@ import DiscordInteractiveGr1 from "./DiscordInteractiveGr1.js";
 import ModifyCounterByUser from "./ModifyCounterByUser.js";
 import ModifyByUserByBtn from "./ModifyByUserByBtn";
 import AddInputsValues from "./AddInputsValues";
+import AddNrFromArr from "./AddNrFromArr";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -356,7 +357,9 @@ function DiscordInteractiveApp(){
 
 <ModifyByUserByBtn propWidth={"250px"} propColor={"chocolate"} propText={"ModifyByUserByBtn"} />
 
-<AddInputsValues  propWidth={"850px"} propColor={"LightSeaGreen  "} propText={"AddInputsValues"}/>
+<AddInputsValues  propWidth={"850px"} propColor={"LightSeaGreen"} propText={"AddInputsValues"}/>
+
+<AddNrFromArr  propWidth={"350px"} propColor={"DarkTurquoise"} propText={"AddNrFromArr"}/>
 </>
   );
 }

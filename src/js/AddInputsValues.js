@@ -36,8 +36,9 @@ const myBtnStyle={
 //componenta necontrolata de mine , ci de user
 
 const [sumInputs , setSumInputs]=useState(0);
+  let sumInputsLet = 0;
 
-
+//------------------------------------------------------------------------------
 
 const handleUserAddInputsValues=(event) =>{
   const allInputs=document.querySelectorAll("#sectionAddInputs input");
@@ -48,15 +49,20 @@ for(let i=0 ; i<allInputs.length ; i++){
   console.log("allInputs[i] is : " , allInputs[i]);
   console.log("allInputs[i].value is : " , allInputs[i].value);
 
-
-
-
+  //------------------------------------------------------------------------------
+//variabila sumInputsLet se schimba doar in interiorul functiei handleUserAddInputsValues la event-ul click
+  sumInputsLet=sumInputsLet + parseFloat(allInputs[i].value) ;
+console.log("--- --- sumInputsLet is : " , sumInputsLet);
 }
+
+setSumInputs(sumInputsLet);
 
 }
 
 return(
   <section style={{border:"3px solid blue", padding:"1em" , margin:"1em"}} id="sectionAddInputs">
+
+<h3>sumInputsLet : {sumInputsLet}</h3>
 
 <h1 style={myStyleMy}>function component is : {propText}</h1>
 
@@ -68,7 +74,7 @@ return(
 <input type="number" name="number" id="nr6" placeholder="write a number" style={myInputStyle}/>
 <input type="number" name="number" id="nr7" placeholder="write a number" style={myInputStyle}/>
 
-<h3>sumInputs is : {sumInputs}</h3>
+<h3 style={{color:"indigo"}}>sumInputs is : {sumInputs}</h3>
 
 <button onClick={handleUserAddInputsValues} style={myBtnStyle}>show sum of inputs</button>
 

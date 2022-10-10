@@ -218,14 +218,97 @@ mynrHTMLparagraphSecond.innerText=getMyNr(2) + getMyNr(3);
 //------------------------------------------------------------------------------
 // — 19.04.2022 discord general pt a construi functii cu tad-uri
 
+//aduna elementele numar dintr-un array
+const mySimpleArr=[1, 2, 3, 4, 55];
+let mySum = 0;
+console.log("mySum before is : " , mySum);
+
+for(let i=0 ;i<mySimpleArr.length ; i++){
+  mySum = mySum + mySimpleArr[i];
+}
+
+console.log("mySum after is : " , mySum);
+
+const mySumParagraph=document.getElementById('mySumParagraph');
+mySumParagraph.style.padding="1em";
+mySumParagraph.style.margin="1em";
+mySumParagraph.style.border="3px solid Aquamarine";
+mySumParagraph.innerText=mySum;
+mySumParagraph.style.fontWeight="bold";
+mySumParagraph.style.textAlign="center";
+
+///------------------------------------------------------------------------------------add values from 2 inputs
+
+const inputNr1=document.getElementById('inputNr1');
+console.log("--- !!! inputNr1.value is : " , inputNr1.value);
+inputNr1.style.padding="1em";
+inputNr1.style.margin="1em";
+
+const inputNr2=document.getElementById('inputNr2');
+console.log("--- !!! inputNr2.value is : " , inputNr2.value);
+inputNr2.style.padding="1em";
+inputNr2.style.margin="1em";
+
+const btnSumInputs=document.getElementById('btnSumInputs');
+btnSumInputs.style.padding="1em";
+btnSumInputs.style.margin="1em";
+btnSumInputs.style.color="red";
+btnSumInputs.style.fontWeight="bold";
+
+const paragraphSumInputs=document.getElementById('paragraphSumInputs');
+paragraphSumInputs.style.padding="1em";
+paragraphSumInputs.style.margin="1em";
+paragraphSumInputs.style.border="3px solid tomato";
+paragraphSumInputs.style.textAlign="center";
+
+btnSumInputs.addEventListener("click" , function(event){
+  event.preventDefault();
+  paragraphSumInputs.innerText=parseFloat(inputNr1.value) + parseFloat(inputNr2.value);
+  this.style.color="blue";
+  paragraphSumInputs.style.backgroundColor="yellow";
+})
 
 
+///------------------------------------------------------------------------------------add values from some inputs
 
 
+const allSectionSomeInputs=document.querySelectorAll("#sectionSomeInputs .eachInput");
+
+console.log("--- !!! allSectionSomeInputs is an array : " , allSectionSomeInputs);
+console.log("allSectionSomeInputs.length is : " , allSectionSomeInputs.length);
+
+const btnSumSomeInputs=document.getElementById('btnSumSomeInputs');
+btnSumSomeInputs.style.color="magenta";
+
+const paragraphSumSomeInputs=document.getElementById('paragraphSumSomeInputs');
+paragraphSumSomeInputs.style.padding="1em";
+paragraphSumSomeInputs.style.margin="1em";
+paragraphSumSomeInputs.style.border="3px solid yellow";
+paragraphSumSomeInputs.style.textAlign="center";
 
 
+let sumSomeInp=0;
 
+for(let i=0 ; i<allSectionSomeInputs.length ; i++){
+  allSectionSomeInputs[i].style.padding="1em";
+  allSectionSomeInputs[i].style.margin="1em";
+  allSectionSomeInputs[i].style.border="3px solid cornflowerblue";
+}
 
+btnSumSomeInputs.addEventListener("click" , function(event){
+  event.preventDefault();
+
+  this.style.color="brown";
+
+for(let i=0 ; i<allSectionSomeInputs.length ; i++){
+  sumSomeInp = sumSomeInp + parseFloat(allSectionSomeInputs[i].value);
+}
+
+paragraphSumSomeInputs.innerText=sumSomeInp;
+
+})
+
+//------------------------------------------------------------------------------
 
 
 
