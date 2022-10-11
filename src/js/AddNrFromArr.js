@@ -30,6 +30,8 @@ const handleChangeMyText=(event) =>{
 const myNrArr=[10, 20, 30, 50, 100];
 console.log("--- myNrArr is : " , myNrArr);
 //--- myNrArr is :  (5) [10, 20, 30, 50, 100]
+let mySum=0;
+  console.log("@@@---mySum before is : " , mySum);
 
 const myNrParagraph=document.getElementById('myNrParagraph');
 
@@ -38,6 +40,16 @@ const handleAddNrArr=(event) =>{
   myNrParagraph.style.color="olive";
   myNrParagraph.style.backgroundColor="pink";
   myNrParagraph.style.fontWeight="bold";
+
+  myNrArr.map((elNr , index) =>{
+    //map are intotdeauna return
+    mySum = mySum + elNr;
+  })
+
+  console.log("@@@---mySum after is : " , mySum);
+
+  setSumNR(mySum);
+  console.log("@@@---sumNR is : " , sumNR);
 }
 
 //-----------------------------------------------------------------------------

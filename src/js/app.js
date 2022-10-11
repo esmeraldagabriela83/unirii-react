@@ -67,6 +67,8 @@ import ModifyCounterByUser from "./ModifyCounterByUser.js";
 import ModifyByUserByBtn from "./ModifyByUserByBtn";
 import AddInputsValues from "./AddInputsValues";
 import AddNrFromArr from "./AddNrFromArr";
+import AddNrFromArrSecTry from "./AddNrFromArrSecTry";
+import AddNrFromArrThirdTry from "./AddNrFromArrThirdTry";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -360,6 +362,10 @@ function DiscordInteractiveApp(){
 <AddInputsValues  propWidth={"850px"} propColor={"LightSeaGreen"} propText={"AddInputsValues"}/>
 
 <AddNrFromArr  propWidth={"350px"} propColor={"DarkTurquoise"} propText={"AddNrFromArr"}/>
+
+<AddNrFromArrSecTry  propWidth={"150px"} propColor={"Chartreuse "} propText={"AddNrFromArrSecTry"}/>
+
+<AddNrFromArrThirdTry  propWidth={"250px"} propColor={"RoyalBlue "} propText={"AddNrFromArrThirdTry"}/>
 </>
   );
 }
