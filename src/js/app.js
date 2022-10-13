@@ -69,6 +69,8 @@ import AddInputsValues from "./AddInputsValues";
 import AddNrFromArr from "./AddNrFromArr";
 import AddNrFromArrSecTry from "./AddNrFromArrSecTry";
 import AddNrFromArrThirdTry from "./AddNrFromArrThirdTry";
+import PassParameter from "./PassParameter";
+import PassParameterSec from "./PassParameterSec";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -371,5 +373,20 @@ function DiscordInteractiveApp(){
 }
 
 ReactDOM.render(<DiscordInteractiveApp/> , document.getElementById('discord-interactive'));
+
+//------------------------------------------------------------------------------
+
+
+function DiscordPassParameterMih(){
+  return(
+    <>
+<PassParameter  propWidth={"150px"} propColor={"skyblue"} propText={"PassParameter"}/>
+<PassParameterSec propWidth={"550px"} propColor={"DarkOliveGreen"} propText={"PassParameterSec"}/>
+    </>
+  );
+}
+
+ReactDOM.render(<DiscordPassParameterMih/> , document.getElementById('passParameterDiscordMih'));
+
 //
 //https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3

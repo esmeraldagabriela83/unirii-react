@@ -1,7 +1,12 @@
 @import "./colorsAllPage";
 @import "modules/reset";
 
+/*----------------------------------------sass grid cata-----------------------------------------*/
 
+$columns: 12;
+$column-base-width: 100%/$columns;
+
+/*----------------------------------------sass grid cata-----------------------------------------*/
 
 #ul22{
   border:3px solid cornflowerblue;
@@ -150,6 +155,62 @@ flex-wrap: wrap;
 
 
 
+/*----------------------------------------sass grid cata-----------------------------------------*/
 
+/*------------------------------------------------------------------------------*/
+
+.sidebar {                    ///pt grid day 3 , ex de la curs si cel homework , ambele au acelasi scss
+  background-color: #0fe70f;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.container {
+  border: solid crimson 3px;
+  width: 100%;
+  max-width: 990px;
+  padding: 0 15px;
+  margin: 0 auto;                                                     ///de aici se centreaza pe mijlocul ecranului
+  .row {
+    border: dashed deepskyblue 3px;
+    display: flex;
+    flex-wrap: wrap;//pt a le aseza unele sub altele cand se modifica dimensiunea ecranului
+    [class*="col-"] {
+      border: solid darkmagenta 3px;
+      min-height: 10em;
+      width: $column-base-width;
+      padding: 0 15px;
+
+    }
+    @for $i from 1 through $columns {
+      .col-#{$i} {
+        width: $i*$column-base-width;
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+// definesc o clasa blue pt a colora randurile din interiorul lui sidebar
+.movColor{
+  background-color: magenta;
+}
+.yellowColor{
+  background-color: yellow;
+}
+.blue{
+  background-color: dodgerblue;
+}
+.pinkColor{
+  background-color: #e71f79;
+}
+.footer {
+    background-color: #0c3254;
+ // height: 5em;pt ca ca ramane gol conteinerul care nu isi poate schimba dimensiunea pt ca depinde de .row si de .col
+}
+
+/*----------------------------------------sass grid cata-----------------------------------------*/
 
 //
