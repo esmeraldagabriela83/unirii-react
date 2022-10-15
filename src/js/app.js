@@ -71,6 +71,8 @@ import AddNrFromArrSecTry from "./AddNrFromArrSecTry";
 import AddNrFromArrThirdTry from "./AddNrFromArrThirdTry";
 import PassParameter from "./PassParameter";
 import PassParameterSec from "./PassParameterSec";
+import DoButtonCounter from "./DoButtonCounter";
+import JustCounter from "./JustCounter";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -388,5 +390,18 @@ function DiscordPassParameterMih(){
 
 ReactDOM.render(<DiscordPassParameterMih/> , document.getElementById('passParameterDiscordMih'));
 
+//------------------------------------------------------------------------------
+
+function DiscordDoClick(){
+  return(
+    <>
+    <p>do and pass parameter 16 05 2022 discord gr 1</p>
+<DoButtonCounter propWidth={"250px"} propColor={"darkmagenta"} propText={"DoButtonCounter"}/>
+<JustCounter propWidth={"350px"} propColor={"CadetBlue"} propText={"JustCounter"} />
+    </>
+  );
+}
+
+ReactDOM.render(<DiscordDoClick/> , document.getElementById('doDiscord'));
 //
 //https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3

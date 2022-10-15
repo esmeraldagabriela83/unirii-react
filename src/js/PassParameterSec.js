@@ -33,6 +33,8 @@ onClick={(event) => handleClickBtnUser(event , "my string passed")}
 
 <p id="paragraphUserText"></p>
 
+<p style={{margin:"3em 0" , padding:"1em" , border:`3px solid red`}}>displayString is : {displayString}</p>
+
   </section>
 );
 
