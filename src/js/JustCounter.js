@@ -120,7 +120,7 @@ return(
 <article style={{border:`3px solid ${propColor}` , padding:"1em" , margin:"1em"}}>
 <h3>myCounter4 is : {myCounter4}</h3>
 
-<div id="userDiv4" style={{backgroundColor:propColor ,margin:"1em" , height:"200px" , width:`${myCounter4}px` , color:"yellow"}}><strong>my width is set by user / adding 300px</strong></div>
+<div id="userDiv4" style={{backgroundColor:propColor ,margin:"1em" , height:"200px" , width:`${myCounter4}px` , color:"yellow"}}><strong>my width is set by user / adding 50px</strong></div>
 <button onClick={increaseHandleUser}>increase width with 50px by user</button><br></br>
 <button onClick={decreaseHandleUser}>decrease width with 50px by user</button>
 </article>

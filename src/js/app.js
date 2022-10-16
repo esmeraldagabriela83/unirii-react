@@ -73,6 +73,8 @@ import PassParameter from "./PassParameter";
 import PassParameterSec from "./PassParameterSec";
 import DoButtonCounter from "./DoButtonCounter";
 import JustCounter from "./JustCounter";
+import {AddInputsValuesSec , AddInputsValuesThird} from "./AddInputsValuesSec.js";
+import AddWhatever from "./AddWhatever";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -398,6 +400,9 @@ function DiscordDoClick(){
     <p>do and pass parameter 16 05 2022 discord gr 1</p>
 <DoButtonCounter propWidth={"250px"} propColor={"darkmagenta"} propText={"DoButtonCounter"}/>
 <JustCounter propWidth={"350px"} propColor={"CadetBlue"} propText={"JustCounter"} />
+<AddInputsValuesSec  propWidth={"150px"} propColor={"DarkSlateGray"} propText={"AddInputsValuesSec"}/>
+<AddInputsValuesThird  propWidth={"150px"} propColor={"DimGray"} propText={"AddInputsValuesThird"}/>
+<AddWhatever propWidth={"150px"} propColor={"DarkSlateBlue"} propText={"AddWhatever"} />
     </>
   );
 }
