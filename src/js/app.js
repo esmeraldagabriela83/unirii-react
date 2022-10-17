@@ -75,6 +75,8 @@ import DoButtonCounter from "./DoButtonCounter";
 import JustCounter from "./JustCounter";
 import {AddInputsValuesSec , AddInputsValuesThird} from "./AddInputsValuesSec.js";
 import AddWhatever from "./AddWhatever";
+import AddWhateverSec from "./AddWhateverSec";
+import AddWhateverText from "./AddWhateverText";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -403,6 +405,8 @@ function DiscordDoClick(){
 <AddInputsValuesSec  propWidth={"150px"} propColor={"DarkSlateGray"} propText={"AddInputsValuesSec"}/>
 <AddInputsValuesThird  propWidth={"150px"} propColor={"DimGray"} propText={"AddInputsValuesThird"}/>
 <AddWhatever propWidth={"150px"} propColor={"DarkSlateBlue"} propText={"AddWhatever"} />
+<AddWhateverSec propWidth={"350px"} propColor={"FireBrick "} propText={"AddWhateverSec"} />
+<AddWhateverText propWidth={"350px"} propColor={"MediumPurple"} propText={"AddWhateverText"} />
     </>
   );
 }
