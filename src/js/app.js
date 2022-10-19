@@ -77,6 +77,9 @@ import {AddInputsValuesSec , AddInputsValuesThird} from "./AddInputsValuesSec.js
 import AddWhatever from "./AddWhatever";
 import AddWhateverSec from "./AddWhateverSec";
 import AddWhateverText from "./AddWhateverText";
+import ComponentaControlata from "./ComponentaControlata";
+import ComponentaControlataWithBtn from "./ComponentaControlataWithBtn";
+import ComponentaControlataNecontrolataInteractiveDiv from "./ComponentaControlataNecontrolataInteractiveDiv";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -412,5 +415,19 @@ function DiscordDoClick(){
 }
 
 ReactDOM.render(<DiscordDoClick/> , document.getElementById('doDiscord'));
+
+function ComponentaControlataApp(){
+  return(
+    <>
+<p>Cmponenta controlata after discord gr 1 20 05 2022</p>
+<ComponentaControlata propWidth={"350px"} propColor={"green"} propText={"ComponentaControlata"} />
+<ComponentaControlataWithBtn propWidth={"350px"} propColor={"blue"} propText={"ComponentaControlataWithBtn"} />
+<ComponentaControlataNecontrolataInteractiveDiv propWidth={"350px"} propColor={"cornflowerblue"} propText={"ComponentaControlataNecontrolataInteractiveDiv"} />
+    </>
+  );
+}
+
+ReactDOM.render(<ComponentaControlataApp/> , document.getElementById('componenta-controlata'));
+
 //
 //https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3
