@@ -80,6 +80,9 @@ import AddWhateverText from "./AddWhateverText";
 import ComponentaControlata from "./ComponentaControlata";
 import ComponentaControlataWithBtn from "./ComponentaControlataWithBtn";
 import ComponentaControlataNecontrolataInteractiveDiv from "./ComponentaControlataNecontrolataInteractiveDiv";
+import ShopDiscord from "./ShopDiscord";
+import ColorfulBoxes13052022 from "./ColorfulBoxes13052022";
+import ButtoDiscordCounter from "./ButtoDiscordCounter";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -423,6 +426,12 @@ function ComponentaControlataApp(){
 <ComponentaControlata propWidth={"350px"} propColor={"green"} propText={"ComponentaControlata"} />
 <ComponentaControlataWithBtn propWidth={"350px"} propColor={"blue"} propText={"ComponentaControlataWithBtn"} />
 <ComponentaControlataNecontrolataInteractiveDiv propWidth={"350px"} propColor={"cornflowerblue"} propText={"ComponentaControlataNecontrolataInteractiveDiv"} />
+<p>doBuy prop // productPropShopItem prop // apel prin referinta pt array</p>
+<ShopDiscord  propWidth={"350px"} propColor={"DarkBlue"} propText={"ShopDiscord"} />
+<p>apel prin referinta</p>
+<ColorfulBoxes13052022  propWidth={"370px"} propColor={"DeepSkyBlue "} propText={"ColorfulBoxes13052022"} />
+<p>doClick prop  — 16.05.2022 cata discord gr 1</p>
+<ButtoDiscordCounter  propWidth={"390px"} propColor={"crimson"} propText={"ButtoDiscordCounter"} />
     </>
   );
 }

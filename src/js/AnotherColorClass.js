@@ -27,7 +27,7 @@ class AnotherColorClass extends Component {
       console.log("didUpdate")
       }
 
-    
+
 
 ////////////////////////////////////////////////////////////////////////////////
 //la click schimba backgroundColor pt al 2-lea div
