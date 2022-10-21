@@ -83,6 +83,9 @@ import ComponentaControlataNecontrolataInteractiveDiv from "./ComponentaControla
 import ShopDiscord from "./ShopDiscord";
 import ColorfulBoxes13052022 from "./ColorfulBoxes13052022";
 import ButtoDiscordCounter from "./ButtoDiscordCounter";
+import BulbDiscord37curs from "./BulbDiscord37curs.js";
+import BulbDiscodClass from "./BulbDiscodClass.js";
+import DoShowMyText from "./DoShowMyText.js";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -432,6 +435,10 @@ function ComponentaControlataApp(){
 <ColorfulBoxes13052022  propWidth={"370px"} propColor={"DeepSkyBlue "} propText={"ColorfulBoxes13052022"} />
 <p>doClick prop  — 16.05.2022 cata discord gr 1</p>
 <ButtoDiscordCounter  propWidth={"390px"} propColor={"crimson"} propText={"ButtoDiscordCounter"} />
+<p>Bulb component discord curs 37 16052022</p>
+<BulbDiscord37curs  propWidth={"400px"} propColor={"olive"} propText={"BulbDiscord37curs"} />
+<BulbDiscodClass  propWidth={"300px"} propColor={"DimGray"} propText={"BulbDiscodClass"} />
+<DoShowMyText   propWidth={"300px"} propColor={"olive"} propText={"DoShowMyText"} />
     </>
   );
 }
