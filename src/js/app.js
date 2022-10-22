@@ -86,6 +86,8 @@ import ButtoDiscordCounter from "./ButtoDiscordCounter";
 import BulbDiscord37curs from "./BulbDiscord37curs.js";
 import BulbDiscodClass from "./BulbDiscodClass.js";
 import DoShowMyText from "./DoShowMyText.js";
+import PedroTutorialForm from "./PedroTutorialForm.js";
+import CrudOperationsComicsTutorial from "./CrudOperationsComicsTutorial";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -444,6 +446,36 @@ function ComponentaControlataApp(){
 }
 
 ReactDOM.render(<ComponentaControlataApp/> , document.getElementById('componenta-controlata'));
+
+
+//------------------------------------------------------------------------------
+
+
+function MyFormApp(){
+  return(
+    <>
+<p>form dupa tutorial</p>
+<PedroTutorialForm  propWidth={"360px"} propColor={"coral"} propText={"PedroTutorialForm"}/>
+    </>
+  );
+}
+
+ReactDOM.render(<MyFormApp/> , document.getElementById('componenta-form'));
+
+
+//------------------------------------------------------------------------------
+
+function MyCrudApp(){
+  return(
+    <>
+  <p>crud after tutorial</p>
+  <CrudOperationsComicsTutorial  propWidth={"460px"} propColor={"OliveDrab"} propText={"CrudOperationsComicsTutorial"}/>
+    </>
+  );
+}
+
+ReactDOM.render(<MyCrudApp /> , document.getElementById('componenta-crud'));
+
 
 //
 //https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3
