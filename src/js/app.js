@@ -87,7 +87,7 @@ import BulbDiscord37curs from "./BulbDiscord37curs.js";
 import BulbDiscodClass from "./BulbDiscodClass.js";
 import DoShowMyText from "./DoShowMyText.js";
 import PedroTutorialForm from "./PedroTutorialForm.js";
-import CrudOperationsComicsTutorial from "./CrudOperationsComicsTutorial";
+import Crud from "./Crud.js";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -469,7 +469,7 @@ function MyCrudApp(){
   return(
     <>
   <p>crud after tutorial</p>
-  <CrudOperationsComicsTutorial  propWidth={"460px"} propColor={"OliveDrab"} propText={"CrudOperationsComicsTutorial"}/>
+<Crud  propWidth={"350px"} propColor={"LightSalmon "} propText={"Crud"} />
     </>
   );
 }
