@@ -45,6 +45,7 @@ function Crud(props){
           setEditIndex(i)
       };
       const handleUpdate=()=>{
+        //la elementul cu indexul editIndex , sterge un element si adauga un element
           allData.splice(editIndex,1,name)
           setAllData([...allData])
           setShow(false)
@@ -56,7 +57,7 @@ function Crud(props){
       console.log("--- allData is : " , allData);
 
       return(
-          <div>
+          <section style={{padding:"1em" , margin:"1em" , border:`3px solid ${propColor}`}}>
 
 <h1 style={{padding:"1em" , margin:"1em" , border:`3px solid ${propColor}` , color:propColor}}>function component is : {propText}</h1>
 
@@ -68,13 +69,13 @@ function Crud(props){
               {
                   allData.map((val,index)=>
                   <div key={index}>
-                      <h1>{val}</h1>
+                      <h1>val is : {val}</h1>
                       <button className="edit" onClick={()=>handleEdit(index)}  style={{padding:"1em" , margin:"1em" , border:`3px solid ${propColor}` , color:propColor}}>Edit</button>
                       <button className="delete" onClick={()=>handleDelete(index)}  style={{padding:"1em" , margin:"1em" , border:`3px solid ${propColor}` , color:propColor}}>Delete</button>
                   </div>
                   )
               }
-          </div>
+          </section>
       );
 
 //-----------------------------------------------------

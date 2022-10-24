@@ -88,6 +88,9 @@ import BulbDiscodClass from "./BulbDiscodClass.js";
 import DoShowMyText from "./DoShowMyText.js";
 import PedroTutorialForm from "./PedroTutorialForm.js";
 import Crud from "./Crud.js";
+import SpliceFuncComponent from "./SpliceFuncComponent.js";
+import CrudWithFormCataLike from "./CrudWithFormCataLike.js";
+import CrudComics from "./CrudComics.js";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -470,6 +473,10 @@ function MyCrudApp(){
     <>
   <p>crud after tutorial</p>
 <Crud  propWidth={"350px"} propColor={"LightSalmon "} propText={"Crud"} />
+<SpliceFuncComponent  propWidth={"300px"} propColor={"Chocolate"} propText={"SpliceFuncComponent"} />
+<p>react table tutorial</p>
+<CrudWithFormCataLike   propWidth={"300px"} propColor={"CadetBlue"} propText={"CrudWithFormCataLike"} />
+<CrudComics   propWidth={"300px"} propColor={"DarkOliveGreen"} propText={"CrudComics"} />
     </>
   );
 }

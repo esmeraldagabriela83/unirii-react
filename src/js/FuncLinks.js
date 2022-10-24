@@ -1,11 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom";
+
 
 console.log("hello from FuncLinks.js");
 
 function FuncLinks(){
   return(
     <>
+    <h1>function component is : FuncLinks</h1>
 <ul id="ulLinks">
 <li>my links to other pages :</li>
 <a href="./pages/page1.html"><li>hello from page1 written in FuncLinks.js</li></a>
