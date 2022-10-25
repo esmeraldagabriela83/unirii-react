@@ -17,7 +17,7 @@ return(
 </article>
 
 <article style={{padding:"1em" , margin:"1em" , border:`3px solid ${propColor}` , color:propColor}}>
-my crud
+hope to be be links to outher html pages with array methods
 </article>
 
   </section>

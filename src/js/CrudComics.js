@@ -42,6 +42,18 @@ const [allPricesData , setAllPricesData]=useState([]);
 const [showCrud , setShowCrud]=useState(false);
 const [editIndexCRUD , setEditIndexCRUD]=useState("");
 
+//---------------------TAKE THE VALUE FROM THE INPUT FOR NAME---------------------------------------------------------
+
+const handleChangeNameCRUD=(event) =>{
+  setItemCrud(event.target.value);
+}
+
+//---------------------take the value from the input for price----------------------------------------------------------------------------------------------------
+
+const handleChangePriceCRUD=(event) =>{
+  setPriceCrud(event.target.value);
+}
+
     //-----------handle add---------------------------------------------------------------
 
 const handleCrudAdd=(event) =>{
@@ -49,7 +61,7 @@ const handleCrudAdd=(event) =>{
 //------------------------------------------------------------------------------
 console.log("CRUD --- itemCrud is : " , itemCrud);
 
-if(itemCrud.length !== 0){
+if(itemCrud.length !== 0 && priceCrud !== 0){
   //adauga fiecare itemCrud (input value) in arr
   const newCopyallItemsData=[...allItemsData , itemCrud];
 
@@ -59,7 +71,7 @@ if(itemCrud.length !== 0){
     //--------------------------------------------------------------------------
 console.log("CRUD --- priceCrud is : " , priceCrud);
 
-if(priceCrud !== 0){
+if(priceCrud !== 0 && itemCrud.length !== 0){
     //adauga fiecare itemPrice (input value) in arr
   const newCopyallPricesData=[...allPricesData , priceCrud] ;
 
@@ -159,13 +171,13 @@ for(let i=0 ; i < allPricesData.length ; i++){
 <article style={{padding:"1em" , margin:"1em" , border:`3px solid ${propColor}` , color:propColor}}>
 
 <label>Item
-<input type="text" name="itemInput" id="itemInput" value={itemCrud} onChange={(event) =>{setItemCrud(event.target.value)}} style={crudInputStyle}/>
+<input type="text" name="itemInput" id="itemInput" value={itemCrud} onChange={handleChangeNameCRUD} style={crudInputStyle}/>
 </label>
 
 <br></br>
 
 <label>Price
-<input type="number" name="priceInput" id="priceInput" value={priceCrud} onChange={(event) =>{setPriceCrud(event.target.value)}} style={crudInputStyle}/>
+<input type="number" name="priceInput" id="priceInput" value={priceCrud} onChange={handleChangePriceCRUD} style={crudInputStyle}/>
 </label>
 
 <br></br>
@@ -182,6 +194,7 @@ for(let i=0 ; i < allPricesData.length ; i++){
 }
 
 <table>
+<tbody>
 <tr>
 
 <td>
@@ -207,12 +220,15 @@ elPrice is : {elPrice}
 </td>
 
 </tr>
+</tbody>
 </table>
 
 
+</article>
 
-
-
+<article style={{padding:"1em" , margin:"1em" , border:`3px solid ${propColor}` , color:propColor}}>
+<p>itemCrud is : {itemCrud}</p>
+<p>priceCrud is : {priceCrud}</p>
 </article>
 
     </section>

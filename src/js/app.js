@@ -91,6 +91,7 @@ import Crud from "./Crud.js";
 import SpliceFuncComponent from "./SpliceFuncComponent.js";
 import CrudWithFormCataLike from "./CrudWithFormCataLike.js";
 import CrudComics from "./CrudComics.js";
+import CrudComicsWithObject from "./CrudComicsWithObject.js";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -473,10 +474,12 @@ function MyCrudApp(){
     <>
   <p>crud after tutorial</p>
 <Crud  propWidth={"350px"} propColor={"LightSalmon "} propText={"Crud"} />
+<p>array methods</p>
 <SpliceFuncComponent  propWidth={"300px"} propColor={"Chocolate"} propText={"SpliceFuncComponent"} />
 <p>react table tutorial</p>
 <CrudWithFormCataLike   propWidth={"300px"} propColor={"CadetBlue"} propText={"CrudWithFormCataLike"} />
 <CrudComics   propWidth={"300px"} propColor={"DarkOliveGreen"} propText={"CrudComics"} />
+<CrudComicsWithObject   propWidth={"320px"} propColor={"MediumSeaGreen"} propText={"CrudComicsWithObject"} />
     </>
   );
 }
