@@ -92,6 +92,11 @@ import SpliceFuncComponent from "./SpliceFuncComponent.js";
 import CrudWithFormCataLike from "./CrudWithFormCataLike.js";
 import CrudComics from "./CrudComics.js";
 import CrudComicsWithObject from "./CrudComicsWithObject.js";
+import mypersons from "./persons.js";
+import ShowPersonObjFromArr from "./ShowPersonObjFromArr";
+
+import myCopaci from "./copaci.js";
+import ShowPersonAndTreesObjFromArrAndBtn from "./ShowPersonAndTreesObjFromArrAndBtn.js";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -480,6 +485,8 @@ function MyCrudApp(){
 <CrudWithFormCataLike   propWidth={"300px"} propColor={"CadetBlue"} propText={"CrudWithFormCataLike"} />
 <CrudComics   propWidth={"300px"} propColor={"DarkOliveGreen"} propText={"CrudComics"} />
 <CrudComicsWithObject   propWidth={"320px"} propColor={"MediumSeaGreen"} propText={"CrudComicsWithObject"} />
+<ShowPersonObjFromArr   propWidth={"320px"} propColor={"MediumVioletRed"} propText={"ShowPersonObjFromArr"} propPersons={mypersons}/>
+<ShowPersonAndTreesObjFromArrAndBtn   propWidth={"320px"} propColor={"MediumSpringGreen"} propText={"ShowPersonAndTreesObjFromArrAndBtn"} propPersons={mypersons} propCopaci={myCopaci}/>
     </>
   );
 }
