@@ -100,6 +100,10 @@ import myCopaci from "./copaci.js";
 import ShowPersonAndTreesObjFromArrAndBtn from "./ShowPersonAndTreesObjFromArrAndBtn.js";
 import mydogs from "./dogs.js";
 import ShowPersonsPropMockData from "./ShowPersonsPropMockData.js";
+import CrudFormAfterTutorial from "./CrudFormAfterTutorial.js";
+
+
+
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -491,6 +495,7 @@ function MyCrudApp(){
 <ShowPersonObjFromArr   propWidth={"320px"} propColor={"MediumVioletRed"} propText={"ShowPersonObjFromArr"} propPersons={mypersons}/>
 <ShowPersonAndTreesObjFromArrAndBtn   propWidth={"320px"} propColor={"MediumSpringGreen"} propText={"ShowPersonAndTreesObjFromArrAndBtn"} propPersons={mypersons} propCopaci={myCopaci}/>
 <ShowPersonsPropMockData   propWidth={"350px"} propColor={"DarkGoldenRod"} propText={"ShowPersonsPropMockData"} propDogs={mydogs} />
+<CrudFormAfterTutorial  propWidth={"750px"} propColor={"DarkCyan"} propText={"CrudFormAfterTutorial"} />
     </>
   );
 }

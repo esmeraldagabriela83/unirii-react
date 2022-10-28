@@ -44,7 +44,7 @@ const [allObjPrices , setAllObjPrices]=useState([]);
 const [showObjCrud , setShowObjCrud]=useState(false);
 const [editIndexObj , setIndexObj]=useState("");
 
-//------------------------------------------------------------------------------
+//--------------------------!!! atentie introduc datele in 2 array-uri diferite (fiecare array contine string-uri , unul cu names si celalalt cu prices)------------------------
 
 const handleChangeObjCrudName=(event) =>{
   setObjCrud({...objCrud , name:event.target.value});

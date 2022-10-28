@@ -1,6 +1,6 @@
 import React, {useRef , useState , useEffect} from 'react';
 
-const ReadOnlyRow = ({contact , propColor , handleEditClick}) =>{
+const ReadOnlyRow = ({contact , propColor , handleEditClick , handleDeliteClick}) =>{
   return(
 <>
 
@@ -11,7 +11,10 @@ const ReadOnlyRow = ({contact , propColor , handleEditClick}) =>{
     <td>{contact.email}</td>
     <td>{contact.price}</td>
 
-    <td><button type="button" onClick={(event) => handleEditClick(event , contact)}>edit</button></td>
+    <td>
+    <button type="button" onClick={(event) => handleEditClick(event , contact)}>edit</button>
+    <button type="button" onClick={(event) => handleDeliteClick(contact.id)}>delite</button>
+    </td>
     </tr>
 </>
   );

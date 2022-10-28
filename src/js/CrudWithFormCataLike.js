@@ -63,6 +63,16 @@ const [addFormData , setAddFormData]=useState({
 
 const [editContactId , setEditContactId]=useState(null);
 
+const [editFormData , setEditFormData]=useState(
+  {
+    fullName:'',
+    address:'',
+    phoneNumber:'',
+    email:'',
+    price:0
+  }
+);
+
 //---------------
 //functie pt onChange pe input-uri
 const handleAddFormChange=(event) =>{
@@ -97,12 +107,81 @@ setContacts(newContacts);
 
 }
 
+
+const handleEditFormSubmit=(event) =>{
+    event.preventDefault();
+
+const editedContact={
+  id:editContactId,
+  fullName:editFormData.fullName,
+  address:editFormData.address,
+  phoneNumber:editFormData.phoneNumber,
+  email:editFormData.email,
+  price:editFormData.price
+}
+
+const newContacts=[...contacts];
+
+const index=contacts.findIndex((contact) => contact.id === editContactId);
+
+newContacts[index]=editedContact;
+setContacts(newContacts);
+setEditContactId(null);
+
+}
+
+
+const handleEditFormChange=(event) =>{
+  event.preventDefault();
+
+const fieldName=event.target.getAttribute("name");
+const fieldValue=event.target.value;
+
+const newFormData={...editFormData};
+newFormData[fieldName]=fieldValue;
+
+setEditFormData(newFormData);
+
+}
+
 //-------------------------handle edit---------------------------------------------------------------------------------------------handle edit---------------------
 
 const handleEditClick = (event , contact) =>{
 event.preventDefault();
 
 setEditContactId(contact.id);
+
+const formValues={
+  fullName:contact.fullName,
+  address:contact.address,
+  phoneNumber:contact.phoneNumber,
+  email:contact.email,
+  price:contact.price
+};
+
+setEditFormData(formValues);
+
+}
+
+const handleCancelClick=(event) =>{
+  setEditContactId(null);
+}
+
+//---------------handle delite-----------------------------
+
+const handleDeliteClick=(contactId) =>{
+const newContacts=[...contacts];
+
+const index=contacts.findIndex((contact) => contact.id === contactId);
+
+//use the splice() method to remove the element with the index from the array
+//at position index remove one element
+
+newContacts.splice(index , 1);
+
+//update the state
+setContacts(newContacts);
+
 }
 
   //----------------------------------------------------------------------------
@@ -147,7 +226,7 @@ setEditContactId(contact.id);
 <article style={{padding:"1em 0" , margin:"1em 0" , border:`3px solid ${propColor}` , color:propColor}}>
 
 <div className="app-container">
-<form>
+<form onSubmit={handleEditFormSubmit}>
 <table>
 
 <thead>
@@ -167,7 +246,8 @@ setEditContactId(contact.id);
   //map are intotdeauna return
   return(
     <Fragment>
-    {editContactId === contact.id ? ( <EditableRow/>) : (<ReadOnlyRow contact={contact} propColor={"coral "} handleEditClick={handleEditClick}/>)}
+    {editContactId === contact.id ? ( <EditableRow editFormData={editFormData} handleEditFormChange={handleEditFormChange} handleCancelClick={handleCancelClick}/>)
+                                  : (<ReadOnlyRow contact={contact} propColor={"coral "} handleEditClick={handleEditClick} handleDeliteClick={handleDeliteClick}/>)}
 
 
   </Fragment>
