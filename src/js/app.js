@@ -94,6 +94,7 @@ import CrudComics from "./CrudComics.js";
 import CrudComicsWithObject from "./CrudComicsWithObject.js";
 import mypersons from "./persons.js";
 import ShowPersonObjFromArr from "./ShowPersonObjFromArr";
+import CrudSamePage from "./CrudSamePage";
 
 
 import myCopaci from "./copaci.js";
@@ -496,6 +497,7 @@ function MyCrudApp(){
 <ShowPersonAndTreesObjFromArrAndBtn   propWidth={"320px"} propColor={"MediumSpringGreen"} propText={"ShowPersonAndTreesObjFromArrAndBtn"} propPersons={mypersons} propCopaci={myCopaci}/>
 <ShowPersonsPropMockData   propWidth={"350px"} propColor={"DarkGoldenRod"} propText={"ShowPersonsPropMockData"} propDogs={mydogs} />
 <CrudFormAfterTutorial  propWidth={"750px"} propColor={"DarkCyan"} propText={"CrudFormAfterTutorial"} />
+<CrudSamePage  propWidth={"750px"} propColor={"FireBrick"} propText={"CrudSamePage"} />
     </>
   );
 }

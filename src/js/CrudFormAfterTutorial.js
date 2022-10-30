@@ -88,13 +88,11 @@ setMycontacts(newmycontacts);
 
 //---------------------handle delite --------------------
 
-const myHandleDeleteClick=(deleteIndex) =>{
-//---
-//mycontacts.findIndex((contact) => contact.id === myeditIndexObj);
-  //----
+const myHandleDeleteClick=(event , deleteIndex) =>{
+
 const newmycontacts=[...mycontacts];
 newmycontacts.splice(deleteIndex , 1);
-//update the state
+//update the state of mycontacts array
 
 setMycontacts(newmycontacts);
 }
@@ -155,7 +153,7 @@ sumPricesForm.innerText=mySum;
     <td>{mycontact.phoneNumber}</td>
     <td>{mycontact.email}</td>
     <td>{mycontact.price}</td>
-    <td><button type="button" onClick={(event) =>myHandleDeleteClick(myindex)}>delite row</button></td>
+    <td><button type="button" onClick={(event) =>myHandleDeleteClick(event , myindex)}>delite row</button></td>
     </tr>
   );
 })}
