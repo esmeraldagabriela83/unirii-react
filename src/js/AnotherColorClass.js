@@ -6,7 +6,7 @@ console.log("hello helloo from AnotherColorClass.js");
 class AnotherColorClass extends Component {
 
   constructor(props){
-        console.log("constructor");
+      //  console.log("constructor");
         super(props);
         this.state = {
           backgroundColor: 'yellow',
@@ -15,7 +15,7 @@ class AnotherColorClass extends Component {
         }
       }
       componentDidMount(){
-      console.log("didMount");
+  //    console.log("didMount");
         const intervalIdTimer = setInterval(()=>{
             this.setState({
               backgroundColor: "blue"
@@ -24,7 +24,7 @@ class AnotherColorClass extends Component {
       }
 
       componentDidUpdate(){
-      console.log("didUpdate")
+    //  console.log("didUpdate")
       }
 
 
@@ -32,7 +32,7 @@ class AnotherColorClass extends Component {
 ////////////////////////////////////////////////////////////////////////////////
 //la click schimba backgroundColor pt al 2-lea div
 clickDiv = (event) => {
-       console.log("IN CLASS clicking");
+       //console.log("IN CLASS clicking");
        this.setState({
           backgroundColorSecondDiv: "green"
         })
@@ -47,7 +47,7 @@ clickDiv = (event) => {
 
 ////////////////////////////////////////////////////////////////////////////////
 render(){
-  console.log("render");
+  //console.log("render");
   return <>
         <div style={{backgroundColor:this.state.backgroundColor, width:"100px", height:"100px"}}></div>
         <div onClick={this.clickDiv} style={{backgroundColor:this.state.backgroundColorSecondDiv, width:"100px", height:"100px"}}></div>

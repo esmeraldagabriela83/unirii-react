@@ -11,12 +11,6 @@ function CrudSamePage(props){
 
 const {propWidth , propColor , propText}=props;
 
-    //-----------------------------------------------------------------------
-
-    const handleConsoleData=(event) =>{
-      console.log("data from CrudSamePage function component is arr : " , data);
-      console.log("data.length is : " , data.length);
-    }
 
     //--------------------------------------------------------------------------
 
@@ -70,18 +64,12 @@ setTutContacts(newTutContacts);
 
 }
 
-//------------------------------------------------------------------------------
-
-
-
-
-
 
 
 //------------------------------delete-----------------------------------------
 
 const handleDeleteOnePage=(event , indexDeleteRowPerson) =>{
-  console.log("you clicked thedelete btn");
+  console.log(`you clicked to delete the ${indexDeleteRowPerson + 1} btn`);
 
   const newcontacts=[...tutContacts];
   newcontacts.splice(indexDeleteRowPerson , 1);
@@ -91,8 +79,44 @@ const handleDeleteOnePage=(event , indexDeleteRowPerson) =>{
 
 }
 
+//-----------------------------sum------------------------------------------------
+
+let sumOnPage=0;
+
+for(let i=0 ; i<tutContacts.length ; i++){
+  sumOnPage=sumOnPage + parseFloat(tutContacts[i].price);
+}
+
+//--------------------------sum on btn click------------------------------------------
+
+let showSumOnPage=0;
+
+const handleShowSum=(event) =>{
+  tutContacts.forEach(sumFuncOnPage);
+
+  function sumFuncOnPage(item , index , array){
+  showSumOnPage= showSumOnPage + parseFloat(array[index].price);
+  return showSumOnPage;
+  }
+
+  const sumIdOnPage=document.getElementById('sumIdOnPage');
+  sumIdOnPage.innerText=showSumOnPage;
+}
+
+
 
 //--------------------------------------------------------------------------
+
+    //-----------------------------------------------------------------------
+
+    const handleConsoleData=(event) =>{
+      console.log("data from CrudSamePage function component is arr : " , data);
+      console.log("data.length is : " , data.length);
+      console.log("tutContacts is : " , tutContacts);
+      console.log("tutContacts.length is : " , tutContacts.length);
+    }
+
+
 
 return(
 
@@ -128,7 +152,9 @@ return(
   <td>{tutContact.phoneNumber}</td>
   <td>{tutContact.email}</td>
   <td>{tutContact.price}</td>
-  <td><button onClick={(event) =>handleDeleteOnePage(event , tutIndex)}>delete</button></td>
+  <td>
+  <button onClick={(event) =>handleDeleteOnePage(event , tutIndex)}>delete</button>
+  </td>
   </tr>
 ) ;
 })}
@@ -153,6 +179,11 @@ return(
 
 </div>
 
+<p>sum is :{sumOnPage}</p>
+
+<button onClick={handleShowSum}>show sum</button>
+
+<p>sum is : <em id="sumIdOnPage"></em></p>
 
   </section>
 

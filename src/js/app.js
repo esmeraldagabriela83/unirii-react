@@ -95,6 +95,7 @@ import CrudComicsWithObject from "./CrudComicsWithObject.js";
 import mypersons from "./persons.js";
 import ShowPersonObjFromArr from "./ShowPersonObjFromArr";
 import CrudSamePage from "./CrudSamePage";
+import BudgetFunctionComponent from "./BudgetFunctionComponent.js";
 
 
 import myCopaci from "./copaci.js";
@@ -102,7 +103,7 @@ import ShowPersonAndTreesObjFromArrAndBtn from "./ShowPersonAndTreesObjFromArrAn
 import mydogs from "./dogs.js";
 import ShowPersonsPropMockData from "./ShowPersonsPropMockData.js";
 import CrudFormAfterTutorial from "./CrudFormAfterTutorial.js";
-
+import BudgetChris from "./BudgetChris.js";
 
 
 
@@ -480,7 +481,7 @@ function MyFormApp(){
 ReactDOM.render(<MyFormApp/> , document.getElementById('componenta-form'));
 
 
-//------------------------------------------------------------------------------
+//-----------------------------crud-------------------------------------------------
 
 function MyCrudApp(){
   return(
@@ -503,6 +504,24 @@ function MyCrudApp(){
 }
 
 ReactDOM.render(<MyCrudApp /> , document.getElementById('componenta-crud'));
+
+//--------------------------------budget---------------------------------------------------
+
+
+function MyBudgetApp(){
+  return(
+    <>
+<p>notes app</p>
+<BudgetFunctionComponent  propWidth={"650px"} propColor={"DarkBlue"} propText={"BudgetFunctionComponent"} />
+<BudgetChris   propWidth={"550px"} propColor={"PaleVioletRed"} propText={"BudgetChris"} />
+
+    </>
+  );
+}
+
+ReactDOM.render(<MyBudgetApp /> , document.getElementById('budget'));
+
+
 
 
 //
