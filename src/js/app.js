@@ -95,17 +95,16 @@ import CrudComicsWithObject from "./CrudComicsWithObject.js";
 import mypersons from "./persons.js";
 import ShowPersonObjFromArr from "./ShowPersonObjFromArr";
 import CrudSamePage from "./CrudSamePage";
-import BudgetFunctionComponent from "./BudgetFunctionComponent.js";
-
 
 import myCopaci from "./copaci.js";
 import ShowPersonAndTreesObjFromArrAndBtn from "./ShowPersonAndTreesObjFromArrAndBtn.js";
 import mydogs from "./dogs.js";
 import ShowPersonsPropMockData from "./ShowPersonsPropMockData.js";
 import CrudFormAfterTutorial from "./CrudFormAfterTutorial.js";
+import BudgetFunctionComponent from "./BudgetFunctionComponent.js";
 import BudgetChris from "./BudgetChris.js";
-
-
+import PedroAPIrequest from "./PedroAPIrequest.js";
+import PedroRequestAPI from "./PedroRequestAPI.js";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -514,7 +513,20 @@ function MyBudgetApp(){
 <p>notes app</p>
 <BudgetFunctionComponent  propWidth={"650px"} propColor={"DarkBlue"} propText={"BudgetFunctionComponent"} />
 <BudgetChris   propWidth={"550px"} propColor={"PaleVioletRed"} propText={"BudgetChris"} />
+<p>api request fetch axios</p>
+<PedroAPIrequest   propWidth={"550px"} propColor={"DodgerBlue"} propText={"PedroAPIrequest"}  />
+<PedroRequestAPI  propWidth={"550px"} propColor={"DarkViolet"} propText={"PedroRequestAPI"}  />
 
+<p>ReactJS Course [7] - How To Fetch Data From an API in React</p>
+<p>https://www.youtube.com/watch?v=je3FTTunyp4</p>
+
+<p>bootstrap</p>
+<p>https://www.youtube.com/watch?v=eow125xV5-c&t=1s</p>
+<p>https://www.youtube.com/watch?v=eow125xV5-c&t=1s</p>
+
+<p>pedro react app begginer</p>
+<p>https://www.youtube.com/watch?v=I2UBjN5ER4s&t=241s</p>
+<p>React Website Tutorial - Beginner React JS Project Fully Responsive</p>
     </>
   );
 }

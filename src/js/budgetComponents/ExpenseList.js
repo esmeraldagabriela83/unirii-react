@@ -1,4 +1,6 @@
-import React, {useRef , useState , useEffect} from 'react';
+import React, {useRef , useState , useEffect , useContext} from 'react';
+import {AppContext} from "../contextBudget/AppContext";
+
 import ExpenseItem from "./ExpenseItem.js";
 
 
@@ -9,15 +11,17 @@ const ExpenseList =(props) =>{
 
   const {propWidth , propColor , propText}=props;
 
-//--------------------------------------------------------------------------------
+const {expenses}=useContext(AppContext);
 
-const expenses=[
-  {id:123 , name:"shopping1" , cost:50},
-  {id:1234 , name:"shopping2" , cost:500},
-  {id:12345 , name:"shopping3" , cost:550},
-  {id:12367 , name:"shopping4" , cost:5000},
-  {id:12389 , name:"shopping5" , cost:555},
-];
+//--------------------------------------------------------------------------------
+//
+// const expenses=[
+//   {id:123 , name:"shopping1" , cost:50},
+//   {id:1234 , name:"shopping2" , cost:500},
+//   {id:12345 , name:"shopping3" , cost:550},
+//   {id:12367 , name:"shopping4" , cost:5000},
+//   {id:12389 , name:"shopping5" , cost:555},
+// ];
 
   //------------------------------------------------------------------------------
 
@@ -31,7 +35,11 @@ const expenses=[
   //map are intotdeauna return
   return(
     <ul key={index}>
-<li>each li : {item.id} {item.name} {item.cost}</li>
+<li style={{border:"3px dotted cyan" , padding:"1em" , margin:"1em"}}>
+<p>{item.id}</p>
+<p>{item.name}</p>
+<p>{item.cost}</p>
+ </li>
     </ul>
   );
 })}

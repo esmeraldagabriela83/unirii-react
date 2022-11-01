@@ -1,5 +1,5 @@
-import React, {useRef , useState , useEffect} from 'react';
-
+import React, {useRef , useState , useEffect , useContext} from 'react';
+import {AppContext} from "../contextBudget/AppContext";
 
 
 
@@ -9,8 +9,20 @@ const ExpenseItem =(props) =>{
 
   const {id , name , cost , propWidth , propColor , propText}=props;
 
+  //----------------------------------------------------------------------------
 
-  //------------------------------------------------------------------------------
+const { dispatch } = useContext(AppContext);
+
+
+
+const handleDeleteExpense = () => {
+		dispatch({
+			type: 'DELETE_EXPENSE',
+			payload: props.id,
+		});
+	};
+
+  //----------------------------------------------------------------------------
 
   return(
 
@@ -21,8 +33,10 @@ const ExpenseItem =(props) =>{
 <li>
 <p style={{textAlign:"center"}}>{name}</p>
 <div style={{display:"flex" , alignItems:"center" , justifyContent:"space-between"}}>
+
 <span>${cost}</span>
-<button>delete</button>
+<button onClick={handleDeleteExpense}>delete</button>
+
 </div>
 </li>
 
