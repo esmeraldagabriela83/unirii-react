@@ -9,6 +9,7 @@ import Axios from "axios";
 
 //ReactJS Course [7] - How To Fetch Data From an API in React
 //https://www.youtube.com/watch?v=je3FTTunyp4&t=1545s
+
 //url for cats:
 //https://catfact.ninja/fact
 
@@ -26,9 +27,10 @@ const handleFetchCatInfo=(event) =>{
   console.log("---------------fetch cat info");
 
 fetch("https://catfact.ninja/fact")
+//transforma JSON-ul in obiect JS
 .then((response) => response.json())
 .then((data) =>{
-  console.log("fetch cat data is : " , data)
+  console.log("fetch cat data obj JS is : " , data)
 
 //fetch cat data is :  {fact: 'The ability of a cat to find its way home is calle…ized cells in their brains that act as compasses.', length: 216}
 setCatFetch("data.fact is : " + data.fact + "   " + "// data.length is : " + data.length)

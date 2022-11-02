@@ -105,6 +105,14 @@ import BudgetFunctionComponent from "./BudgetFunctionComponent.js";
 import BudgetChris from "./BudgetChris.js";
 import PedroAPIrequest from "./PedroAPIrequest.js";
 import PedroRequestAPI from "./PedroRequestAPI.js";
+import PedroCatRequestAPI from "./PedroCatRequestAPI.js";
+import PedroCatCatRequestAPI from "./PedroCatCatRequestAPI";
+import PedroAPIrequestExample from "./PedroAPIrequestExample.js";
+import PedroAPIpersonObj from "./PedroAPIpersonObj.js";
+import PedroPersonAPIrequest from "./PedroPersonAPIrequest.js";
+import PedroMariaAPIrequest from "./PedroMariaAPIrequest";
+import PedroExcuse from "./PedroExcuse.js";
+import CODEevolutionAPI from "./CODEevolutionAPI.js";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -516,6 +524,15 @@ function MyBudgetApp(){
 <p>api request fetch axios</p>
 <PedroAPIrequest   propWidth={"550px"} propColor={"DodgerBlue"} propText={"PedroAPIrequest"}  />
 <PedroRequestAPI  propWidth={"550px"} propColor={"DarkViolet"} propText={"PedroRequestAPI"}  />
+<PedroCatRequestAPI  propWidth={"850px"} propColor={"DarkSalmon"} propText={"PedroCatRequestAPI"}  />
+<PedroCatCatRequestAPI  propWidth={"830px"} propColor={"DodgerBlue"} propText={"PedroCatCatRequestAPI"}  />
+<PedroAPIrequestExample   propWidth={"820px"} propColor={"hotPink"} propText={"PedroAPIrequestExample"}  />
+<PedroAPIpersonObj   propWidth={"810px"} propColor={"DarkGoldenRod "} propText={"PedroAPIpersonObj"}  />
+<PedroPersonAPIrequest   propWidth={"800px"} propColor={"MidnightBlue"} propText={"PedroPersonAPIrequest"}  />
+<PedroMariaAPIrequest  propWidth={"805px"} propColor={"MediumSlateBlue"} propText={"PedroMariaAPIrequest"}  />
+<p>pedro excuse API request</p>
+<PedroExcuse   propWidth={"800px"} propColor={"LightSteelBlue "} propText={"PedroExcuse"}  />
+<CODEevolutionAPI   propWidth={"800px"} propColor={"SteelBlue"} propText={"CODEevolutionAPI"}  />
 
 <p>ReactJS Course [7] - How To Fetch Data From an API in React</p>
 <p>https://www.youtube.com/watch?v=je3FTTunyp4</p>
@@ -525,8 +542,8 @@ function MyBudgetApp(){
 <p>https://www.youtube.com/watch?v=eow125xV5-c&t=1s</p>
 
 <p>pedro react app begginer</p>
-<p>https://www.youtube.com/watch?v=I2UBjN5ER4s&t=241s</p>
-<p>React Website Tutorial - Beginner React JS Project Fully Responsive</p>
+<p>How to Fetch Data in React With A Custom useFetch Hook</p>
+<p>https://www.youtube.com/watch?v=Vspeudp-M9k</p>
     </>
   );
 }
@@ -534,6 +551,9 @@ function MyBudgetApp(){
 ReactDOM.render(<MyBudgetApp /> , document.getElementById('budget'));
 
 
+//maine
+//React Hooks Tutorial - 13 - Fetching data with useEffect Part 2
+//https://www.youtube.com/watch?v=1tfd6ANaNRY
 
 
 //
