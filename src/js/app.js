@@ -113,6 +113,10 @@ import PedroPersonAPIrequest from "./PedroPersonAPIrequest.js";
 import PedroMariaAPIrequest from "./PedroMariaAPIrequest";
 import PedroExcuse from "./PedroExcuse.js";
 import CODEevolutionAPI from "./CODEevolutionAPI.js";
+import CODEevolutionAPIalbums from "./CODEevolutionAPIalbums.js";
+import CODEevolutionAPIuserChoosenPost from "./CODEevolutionAPIuserChoosenPost.js";
+import APIphoto from "./APIphoto.js";
+import APIcat from "./APIcat.js";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -533,6 +537,10 @@ function MyBudgetApp(){
 <p>pedro excuse API request</p>
 <PedroExcuse   propWidth={"800px"} propColor={"LightSteelBlue "} propText={"PedroExcuse"}  />
 <CODEevolutionAPI   propWidth={"800px"} propColor={"SteelBlue"} propText={"CODEevolutionAPI"}  />
+<CODEevolutionAPIalbums   propWidth={"800px"} propColor={"Chartreuse"} propText={"CODEevolutionAPIalbums"}  />
+<CODEevolutionAPIuserChoosenPost   propWidth={"900px"} propColor={"SlateBlue"} propText={"CODEevolutionAPIuserChoosenPost"}  />
+<APIphoto   propWidth={"450px"} propColor={"tan"} propText={"APIphoto"}  />
+<APIcat   propWidth={"470px"} propColor={"Turquoise"} propText={"APIcat"}  />
 
 <p>ReactJS Course [7] - How To Fetch Data From an API in React</p>
 <p>https://www.youtube.com/watch?v=je3FTTunyp4</p>
@@ -551,9 +559,15 @@ function MyBudgetApp(){
 ReactDOM.render(<MyBudgetApp /> , document.getElementById('budget'));
 
 
-//maine
-//React Hooks Tutorial - 13 - Fetching data with useEffect Part 2
-//https://www.youtube.com/watch?v=1tfd6ANaNRY
+//maine useContext
+
+//code evolution
+//React Hooks Tutorial - 15 - useContext Hook Part 1
+//https://www.youtube.com/watch?v=CI7EYWmRDJE
+
+//PedroExcuse
+//UseContext Hook Tutorial In ReactJS | Global States
+//https://www.youtube.com/watch?v=lnL6gRkQ5g8
 
 
 //
