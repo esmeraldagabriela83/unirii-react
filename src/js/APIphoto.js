@@ -128,7 +128,7 @@ return(
 
 <h3> button and API request </h3>
 
-<label htmlFor="idUserPhoto"><br></br>
+<label htmlFor="idUserPhoto">write a nr // index photo // 1-5000<br></br>
 <input type="number" name="idUserPhoto" id="idUserPhoto" value={idPhoto} onChange={changeValueIdInput} />
 </label><br></br>
 

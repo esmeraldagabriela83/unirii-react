@@ -117,6 +117,12 @@ import CODEevolutionAPIalbums from "./CODEevolutionAPIalbums.js";
 import CODEevolutionAPIuserChoosenPost from "./CODEevolutionAPIuserChoosenPost.js";
 import APIphoto from "./APIphoto.js";
 import APIcat from "./APIcat.js";
+import APIpoetry from "./APIpoetry.js";
+import APIfox from "./APIfox";
+import APIfood from "./APIfood";
+import APIusers from "./APIusers";
+import APIblood from "./APIblood";
+import APIbank from "./APIbank";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -541,6 +547,12 @@ function MyBudgetApp(){
 <CODEevolutionAPIuserChoosenPost   propWidth={"900px"} propColor={"SlateBlue"} propText={"CODEevolutionAPIuserChoosenPost"}  />
 <APIphoto   propWidth={"450px"} propColor={"tan"} propText={"APIphoto"}  />
 <APIcat   propWidth={"470px"} propColor={"Turquoise"} propText={"APIcat"}  />
+<APIpoetry   propWidth={"470px"} propColor={"CornflowerBlue"} propText={"APIpoetry"}   />
+<APIfox   propWidth={"50vw"} propColor={"tomato"} propText={"APIfox"} />
+<APIfood    propWidth={"50vw"} propColor={"yellow"} propText={"APIfood"} />
+<APIusers  propWidth={"30vw"} propColor={"darkMagenta"} propText={"APIusers"}  />
+<APIblood  propWidth={"40vw"} propColor={"MediumSlateBlue"} propText={"APIblood"} />
+<APIbank  propWidth={"40vw"} propColor={"indigo"} propText={"APIbank"}  />
 
 <p>ReactJS Course [7] - How To Fetch Data From an API in React</p>
 <p>https://www.youtube.com/watch?v=je3FTTunyp4</p>
@@ -568,6 +580,15 @@ ReactDOM.render(<MyBudgetApp /> , document.getElementById('budget'));
 //PedroExcuse
 //UseContext Hook Tutorial In ReactJS | Global States
 //https://www.youtube.com/watch?v=lnL6gRkQ5g8
+
+
+//must tutorial next
+//Fetch API Introduction
+//https://www.youtube.com/watch?v=Oive66jrwBs
+
+//travel API
+//250 Unique APIs for your next Project
+//https://www.youtube.com/watch?v=Y0QBmXEylP8
 
 
 //
