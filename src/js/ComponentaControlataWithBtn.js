@@ -15,11 +15,11 @@ console.log(propWidth , propColor , propText);
 
 //componenta controlata are value atribut pt tag-ul input si onChange
 
-const [nameSec , seNameSec]=useState("You");
+const [nameSec , setNameSec]=useState("You");
 
 const handleBtnChangeUser=(event)=>{
 
-seNameSec(event.target.value);
+setNameSec(event.target.value);
 
 }
 

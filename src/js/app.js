@@ -123,6 +123,8 @@ import APIfood from "./APIfood";
 import APIusers from "./APIusers";
 import APIblood from "./APIblood";
 import APIbank from "./APIbank";
+import ApiLoripsum from "./ApiLoripsum.js";
+import ApiPicsumList from "./ApiPicsumList";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -553,6 +555,8 @@ function MyBudgetApp(){
 <APIusers  propWidth={"30vw"} propColor={"darkMagenta"} propText={"APIusers"}  />
 <APIblood  propWidth={"40vw"} propColor={"MediumSlateBlue"} propText={"APIblood"} />
 <APIbank  propWidth={"40vw"} propColor={"indigo"} propText={"APIbank"}  />
+<ApiLoripsum  propWidth={"40vw"} propColor={"DarkCyan"} propText={"ApiLoripsum"}  />
+<ApiPicsumList  propWidth={"300px"} propColor={"LimeGreen "} propText={"ApiPicsumList"}  />
 
 <p>ReactJS Course [7] - How To Fetch Data From an API in React</p>
 <p>https://www.youtube.com/watch?v=je3FTTunyp4</p>
