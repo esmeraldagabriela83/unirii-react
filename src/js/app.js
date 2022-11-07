@@ -125,6 +125,8 @@ import APIblood from "./APIblood";
 import APIbank from "./APIbank";
 import ApiLoripsum from "./ApiLoripsum.js";
 import ApiPicsumList from "./ApiPicsumList";
+import ApiPicsumSingle from "./ApiPicsumSingle";
+import ApiPicsumUnsplash from "./ApiPicsumUnsplash";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -557,6 +559,8 @@ function MyBudgetApp(){
 <APIbank  propWidth={"40vw"} propColor={"indigo"} propText={"APIbank"}  />
 <ApiLoripsum  propWidth={"40vw"} propColor={"DarkCyan"} propText={"ApiLoripsum"}  />
 <ApiPicsumList  propWidth={"300px"} propColor={"LimeGreen "} propText={"ApiPicsumList"}  />
+<ApiPicsumSingle  propWidth={"355px"} propColor={"LightSeaGreen"} propText={"ApiPicsumSingle"}  />
+<ApiPicsumUnsplash  propWidth={"350px"} propColor={"PaleVioletRed"} propText={"ApiPicsumUnsplash"}  />
 
 <p>ReactJS Course [7] - How To Fetch Data From an API in React</p>
 <p>https://www.youtube.com/watch?v=je3FTTunyp4</p>
@@ -597,3 +601,11 @@ ReactDOM.render(<MyBudgetApp /> , document.getElementById('budget'));
 
 //
 //https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3
+
+//birthday
+//https://wallhaven.cc/api/v1/search
+//https://wallhaven.cc/help/api?ref=publicapis.dev
+//https://publicapis.dev/category/public-apis/photography
+
+//https://img.bruzu.com/?a.text=Dynamic
+//https://docs.bruzu.com/?ref=publicapis.dev

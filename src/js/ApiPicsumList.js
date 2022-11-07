@@ -63,8 +63,10 @@ return(
 <p>id is : {objPhoto.author}</p>
 
 <div style={{
-             width:`${objPhoto.width}px`,
-             height:`${objPhoto.height}px`,
+             // width:`${objPhoto.width}px`,
+             // height:`${objPhoto.height}px`,
+             width:"300px",
+             height:"200px",
              margin:"1em",
              border:`3px solid ${propColor}` ,
              backgroundColor:"Khaki",
