@@ -127,6 +127,11 @@ import ApiLoripsum from "./ApiLoripsum.js";
 import ApiPicsumList from "./ApiPicsumList";
 import ApiPicsumSingle from "./ApiPicsumSingle";
 import ApiPicsumUnsplash from "./ApiPicsumUnsplash";
+import ApiDinamic from "./ApiDinamic";
+import ApiGeolocation from "./ApiGeolocation";
+import ApiMap from "./ApiMap";
+import ApiAirTel from "./ApiAirTel";
+
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -561,6 +566,11 @@ function MyBudgetApp(){
 <ApiPicsumList  propWidth={"300px"} propColor={"LimeGreen "} propText={"ApiPicsumList"}  />
 <ApiPicsumSingle  propWidth={"355px"} propColor={"LightSeaGreen"} propText={"ApiPicsumSingle"}  />
 <ApiPicsumUnsplash  propWidth={"350px"} propColor={"PaleVioletRed"} propText={"ApiPicsumUnsplash"}  />
+<ApiDinamic  propWidth={"350px"} propColor={"hsl(240, 100%, 30%)"} propText={"ApiDinamic"}  />
+<ApiGeolocation  propWidth={"350px"} propColor={"hsl(330, 50%, 45%)"} propText={"ApiGeolocation"}  />
+<ApiMap  propWidth={"350px"} propColor={"hsl(75, 100%, 30%)"} propText={"ApiMap"}  />
+<ApiAirTel  propWidth={"350px"} propColor={"hsl(0, 100%, 40%)"} propText={"ApiAirTel"}  />
+
 
 <p>ReactJS Course [7] - How To Fetch Data From an API in React</p>
 <p>https://www.youtube.com/watch?v=je3FTTunyp4</p>
@@ -601,11 +611,3 @@ ReactDOM.render(<MyBudgetApp /> , document.getElementById('budget'));
 
 //
 //https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3
-
-//birthday
-//https://wallhaven.cc/api/v1/search
-//https://wallhaven.cc/help/api?ref=publicapis.dev
-//https://publicapis.dev/category/public-apis/photography
-
-//https://img.bruzu.com/?a.text=Dynamic
-//https://docs.bruzu.com/?ref=publicapis.dev
