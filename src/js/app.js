@@ -131,6 +131,7 @@ import ApiDinamic from "./ApiDinamic";
 import ApiGeolocation from "./ApiGeolocation";
 import ApiMap from "./ApiMap";
 import ApiAirTel from "./ApiAirTel";
+import BudgetCrudLikeFunctionComponent from "./BudgetCrudLikeFunctionComponent.js";
 
 
 import itemsComputers from "./itemsComputers.js"
@@ -587,6 +588,22 @@ function MyBudgetApp(){
 }
 
 ReactDOM.render(<MyBudgetApp /> , document.getElementById('budget'));
+
+//------------------------------------
+
+function BudgetCrudLikeApp(){
+
+return(
+  <>
+<p>my Crud and budget like tutorial</p>
+
+<BudgetCrudLikeFunctionComponent  propWidth={"350px"} propColor={"lime"} propText={"BudgetCrudLikeFunctionComponent"}  />
+  </>
+)
+
+}
+
+ReactDOM.render(<BudgetCrudLikeApp/> , document.getElementById('budgetCrudLike'));
 
 
 //maine useContext
