@@ -1,10 +1,15 @@
 import React, {useState , useEffect} from 'react';
+import { nanoid } from "nanoid";
+
+import ReadOnlyRowActivity from "./componentsActivity/ReadOnlyRowActivity.js";
+import EditableRowActivity from "./componentsActivity/EditableRowActivity.js";
 
 import newData from "./newMock-data.json";
 
 import personData from "./mock-data.json";
 
-
+//Create a Table in React | Learn how to view, add, delete and edit rows in a table from Scratch
+//https://www.youtube.com/watch?v=dYjdzpZv5yc
 
 //https://www.w3schools.com/react/react_conditional_rendering.asp
 
@@ -87,9 +92,128 @@ const remaining=document.getElementById('remaining');
 
 //--------------------------------------preia valorile din input-urile ce apartin formularului completat de user-----------------------------------------
 
+const [addFormDatActivity , setAddFormDataActivity]=useState({
+  name:"",
+  price:0
+});
+//---------------
+
+const [editFormDataActivity , setEditFormDataActivity]=useState({
+  name:"",
+  price:0
+});
+
+//--------------
+
+  const [editContactIdActivity, setEditContactIdActivity] = useState(null);
+
+//--------------
+
+const handleAddFormChangeActivity=(event) =>{
+  event.preventDefault();
+//destructurare obiect
+const newCopyaddFormDatActivity={...addFormDatActivity , [event.target.name]: event.target.value};
+
+setAddFormDataActivity(newCopyaddFormDatActivity) ;
+}
+
+//------------------
+
+const handleEditFormChangeActivity=(event) =>{
+
+  event.preventDefault();
+
+  const newCopyFormDataActivity={...editFormDataActivity , [event.target.name]: event.target.value}
+setEditFormDataActivity(newCopyFormDataActivity);
+}
+
+//---------------------
+
+const handleAddFormSubmitActivity=(event) =>{
+
+  event.preventDefault();
+
+const newContactActivity={
+  id: nanoid(),
+  name:addFormDatActivity.name,
+  price:addFormDatActivity.price
+};
+
+console.log("newContactActivity" , newContactActivity);
+//destructurare array
+const newnContacts=[...nContacts, newContactActivity];
+console.log("newnContacts is : " , newnContacts);
+
+setNcontacts(newnContacts);
+
+}
+
+
+//------------------------
+
+const handleEditFormSubmitActivity=(event) =>{
+
+  event.preventDefault();
+
+  const editedContactActivity={
+id:editContactIdActivity,
+name:editFormDataActivity.name ,
+price:editFormDataActivity.price
+  };
+
+  const newnContacts=[...nContacts];
+
+    const index = nContacts.findIndex((nContact) => nContact.id === editContactIdActivity);
+
+    newnContacts[index]=editedContactActivity;
+
+setNcontacts(newnContacts);
+setEditContactIdActivity(null);
+}
 
 //-------------------------------------------------------------
 
+const handleEditClickActivity=(event , nContact) =>{
+
+  event.preventDefault();
+
+  setEditContactIdActivity(nContact.id);
+
+  console.log("editContactIdActivity at function handleEditClickActivity : " , editContactIdActivity);
+
+  const formValuesActivity={
+    name:nContact.name,
+    price:nContact.price
+  };
+
+  setEditFormDataActivity(formValuesActivity);
+
+  console.log("editFormDataActivity at function handleEditClickActivity : " , editFormDataActivity);
+
+}
+
+//------------------
+
+
+const handleCancelClickActivity=(event) =>{
+
+setEditContactIdActivity(null);
+
+}
+
+//------------------------
+
+const handleDeleteClickActivity=(event , contactIdActivity) =>{
+
+  const newnContacts=[...nContacts];
+
+  const index = nContacts.findIndex((contact) => contact.id === contactIdActivity);
+
+  newnContacts.splice(index, 1);
+
+  setNcontacts(newnContacts);
+
+}
 
 //------------------------------------------------------------------------------
 
@@ -132,34 +256,41 @@ const remaining=document.getElementById('remaining');
 
 <div className="app-container">
 
+<form onSubmit={handleEditFormSubmitActivity}>
 <table>
 
 <thead>
+<tr>
 <th>name</th>
 <th>price</th>
+<th>actions</th>
+</tr>
 </thead>
 
 <tbody>
 
 {nContacts.map((nContact , index) =>{
   //map are intotdeauna return
-return(
-  <tr key={index}>
-  <td>{nContact.name}</td>
-  <td>{nContact.price}</td>
-  </tr>
-);
+return(<>
+
+  {editContactIdActivity === nContact.id ?
+                                         <EditableRowActivity editFormDataActivityProp={editFormDataActivity} handleEditFormChangeActivityProp={handleEditFormChangeActivity} handleCancelClickActivityProp={handleCancelClickActivity}/>
+                                         :
+                                         <ReadOnlyRowActivity nContactProp={nContact} indexProp={index} handleEditClickActivityProp={handleEditClickActivity} handleDeleteClickActivityProp={handleDeleteClickActivity}/>}
+
+</>);
 })}
 
 </tbody>
 
 </table>
+</form>
 
 <h2>add an activity</h2>
 
-<form>
-<input type="text" name="name" id="name" required="required" placeholder="write an activity"/>
-<input type="number" name="price" id="price" required="required" placeholder="write it`s price"/>
+<form onSubmit={handleAddFormSubmitActivity}>
+<input type="text" name="name" id="name" required="required" placeholder="write an activity" onChange={handleAddFormChangeActivity}/>
+<input type="number" name="price" id="price" required="required" placeholder="write it`s price" onChange={handleAddFormChangeActivity}/>
 
 <button type="submit">add activity</button>
 </form>
