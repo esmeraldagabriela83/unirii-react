@@ -132,7 +132,9 @@ import ApiGeolocation from "./ApiGeolocation";
 import ApiMap from "./ApiMap";
 import ApiAirTel from "./ApiAirTel";
 import BudgetCrudLikeFunctionComponent from "./BudgetCrudLikeFunctionComponent.js";
-
+import Counter13052022Cata from "./Counter13052022Cata.js";
+import ObjAfter13052022Cata from "./ObjAfter13052022Cata.js";
+import After13052022Cata from "./After13052022Cata.js";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -596,7 +598,6 @@ function BudgetCrudLikeApp(){
 return(
   <>
 <p>my Crud and budget like tutorial</p>
-
 <BudgetCrudLikeFunctionComponent  propWidth={"350px"} propColor={"lime"} propText={"BudgetCrudLikeFunctionComponent"}  />
   </>
 )
@@ -605,6 +606,23 @@ return(
 
 ReactDOM.render(<BudgetCrudLikeApp/> , document.getElementById('budgetCrudLike'));
 
+//-----------------------
+
+function PassParamApp(){
+
+return(
+  <>
+<p>parameter passing</p>
+
+<Counter13052022Cata  propWidth={"350px"} propColor={"DarkGoldenRod"} propText={"Counter13052022Cata"}  />
+<ObjAfter13052022Cata  propWidth={"330px"} propColor={"LightGreen"} propText={"ObjAfter13052022Cata"}  />
+<After13052022Cata  propWidth={"330px"} propColor={"gray"} propText={"After13052022Cata"}  />
+  </>
+);
+
+}
+
+ReactDOM.render(<PassParamApp /> , document.getElementById('parrameterPassing'));
 
 //maine useContext
 
