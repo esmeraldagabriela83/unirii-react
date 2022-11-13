@@ -135,6 +135,10 @@ import BudgetCrudLikeFunctionComponent from "./BudgetCrudLikeFunctionComponent.j
 import Counter13052022Cata from "./Counter13052022Cata.js";
 import ObjAfter13052022Cata from "./ObjAfter13052022Cata.js";
 import After13052022Cata from "./After13052022Cata.js";
+import MyCounterParameterPassing from "./MyCounterParameterPassing.js";
+import MyCounterChangeStateParameterPassing from "./MyCounterChangeStateParameterPassing";
+import ShortIfSchool from "./ShortIfSchool.js";
+import DiscordArrReact13052022 from "./DiscordArrReact13052022.js";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -617,12 +621,31 @@ return(
 <Counter13052022Cata  propWidth={"350px"} propColor={"DarkGoldenRod"} propText={"Counter13052022Cata"}  />
 <ObjAfter13052022Cata  propWidth={"330px"} propColor={"LightGreen"} propText={"ObjAfter13052022Cata"}  />
 <After13052022Cata  propWidth={"330px"} propColor={"gray"} propText={"After13052022Cata"}  />
+<MyCounterParameterPassing  propWidth={"330px"} propColor={"DarkSlateGray "} propText={"MyCounterParameterPassing"}  />
+<MyCounterChangeStateParameterPassing  propWidth={"330px"} propColor={"MediumSlateBlue"} propText={"MyCounterChangeStateParameterPassing"}  />
+
+<ShortIfSchool  propWidth={"330px"} propColor={"OliveDrab"} propText={"ShortIfSchool"}  />
+
   </>
 );
 
 }
 
 ReactDOM.render(<PassParamApp /> , document.getElementById('parrameterPassing'));
+//--------------------------
+
+function ArrayReactApp(){
+  return(
+<>
+<DiscordArrReact13052022  propWidth={"330px"} propColor={"MediumOrchid"} propText={"DiscordArrReact13052022"}  />
+</>
+  );
+}
+
+ReactDOM.render(<ArrayReactApp /> , document.getElementById('arrReact'));
+
+
+//-------------------
 
 //maine useContext
 

@@ -31,7 +31,7 @@ const handleModifyAfterCourse=(event, paramNr , paramColor , paramText)=> {
 
 console.log(".......you clicked the btn to modify state");
 
-//destructurare obiect
+//destructurare obiect pt obtinerea cheilor obj
 
 let {defaultCounter , defaultColor , defaultText}=stateObj;
 
