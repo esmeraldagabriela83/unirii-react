@@ -139,6 +139,9 @@ import MyCounterParameterPassing from "./MyCounterParameterPassing.js";
 import MyCounterChangeStateParameterPassing from "./MyCounterChangeStateParameterPassing";
 import ShortIfSchool from "./ShortIfSchool.js";
 import DiscordArrReact13052022 from "./DiscordArrReact13052022.js";
+import DiscordReactArr13052022 from "./DiscordReactArr13052022.js";
+import ChangeArrListOfObj from "./ChangeArrListOfObj.js";
+import ChangeClickBtnArrListOfObj from "./ChangeClickBtnArrListOfObj.js";
 
 import itemsComputers from "./itemsComputers.js"
 console.log("itemsComputers is : " , itemsComputers);
@@ -582,9 +585,7 @@ function MyBudgetApp(){
 <p>ReactJS Course [7] - How To Fetch Data From an API in React</p>
 <p>https://www.youtube.com/watch?v=je3FTTunyp4</p>
 
-<p>bootstrap</p>
-<p>https://www.youtube.com/watch?v=eow125xV5-c&t=1s</p>
-<p>https://www.youtube.com/watch?v=eow125xV5-c&t=1s</p>
+
 
 <p>pedro react app begginer</p>
 <p>How to Fetch Data in React With A Custom useFetch Hook</p>
@@ -638,6 +639,9 @@ function ArrayReactApp(){
   return(
 <>
 <DiscordArrReact13052022  propWidth={"330px"} propColor={"MediumOrchid"} propText={"DiscordArrReact13052022"}  />
+<DiscordReactArr13052022  propWidth={"330px"} propColor={"BurlyWood"} propText={"DiscordReactArr13052022"}  />
+<ChangeArrListOfObj  propWidth={"330px"} propColor={"DarkKhaki"} propText={"ChangeArrListOfObj"}  />
+<ChangeClickBtnArrListOfObj  propWidth={"330px"} propColor={"MediumOrchid"} propText={"ChangeClickBtnArrListOfObj"}  />
 </>
   );
 }

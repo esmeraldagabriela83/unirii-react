@@ -71,6 +71,15 @@ console.log("//////////////////////usserArr" , usserArr);
 const userArrNrStrong=document.getElementById('userArrNrStrong');
 userArrNrStrong.innerText=usserArr.join(" , ");
 
+
+}
+
+//--------------------------
+
+const handleSumAverage=(event) =>{
+
+console.log("you clicked sum and average btn");
+
 //---------
 
 let sumArrUSERnr=0;
@@ -121,9 +130,10 @@ return(
 <input type="number" name="usserInput" id="usserInput" placeholder="your nr" onChange={handleTakeUsserVal}/>
 </label><br></br>
 
-<button onClick={handleNrArr}>add item nr in arr and make their sum // get average</button>
-
+<button onClick={handleNrArr}>add item nr in arr</button>
 <p>usserArr numbers are : <strong id="userArrNrStrong"></strong></p>
+
+<button onClick={handleSumAverage}>make their sum // get average</button>
 
 <p>sum of your numbers <strong id="userArrNrStrongSum"></strong></p>
 
