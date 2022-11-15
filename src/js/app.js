@@ -642,6 +642,8 @@ function ArrayReactApp(){
 <DiscordReactArr13052022  propWidth={"330px"} propColor={"BurlyWood"} propText={"DiscordReactArr13052022"}  />
 <ChangeArrListOfObj  propWidth={"330px"} propColor={"DarkKhaki"} propText={"ChangeArrListOfObj"}  />
 <ChangeClickBtnArrListOfObj  propWidth={"330px"} propColor={"MediumOrchid"} propText={"ChangeClickBtnArrListOfObj"}  />
+
+<i class="bi bi-1-circle-fill"></i>
 </>
   );
 }
